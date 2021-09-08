@@ -1,4 +1,6 @@
 *
 !Assets
+!Assets/*
 !ProjectSettings
+!ProjectSettings/*
 !.gitignore
