@@ -28,6 +28,7 @@ public class Warp : MonoBehaviour
                 {
                     cycled = true;
                     mr.material.color = ColorCycle[cycleIndex++];
+                    if (cycleIndex == ColorCycle.Length) cycleIndex = 0;
                 }
             }
             else cycled = false;
