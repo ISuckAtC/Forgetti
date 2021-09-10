@@ -1,5 +1,6 @@
 *
 !Assets/
+!Assets/*
 Assets/*.meta
 !ProjectSettings
 !ProjectSettings/*
