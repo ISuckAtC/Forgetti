@@ -5,6 +5,7 @@ using UnityEngine;
 public class Follow : MonoBehaviour
 {
     public Transform Player;
+    private Transform PlayerCam;
     public float MinDistance;
     public float MinAngleDelta;
     public float FollowDistance;
@@ -12,7 +13,7 @@ public class Follow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        PlayerCam = Player.GetChild(0);
     }
 
     void FixedUpdate()
@@ -20,7 +21,7 @@ public class Follow : MonoBehaviour
         if (Vector3.Distance(transform.position, Player.position) > MinDistance)
         {
             Vector3 angleToPlayer = (transform.position - Player.position).normalized;
-            Vector3 vAngleDelta = Player.forward - angleToPlayer;
+            Vector3 vAngleDelta = PlayerCam.forward - angleToPlayer;
             if (vAngleDelta.magnitude > MinAngleDelta || vAngleDelta.magnitude < -MinAngleDelta)
             {
                 Vector3 followPosition = Player.position - (Player.forward * FollowDistance);
