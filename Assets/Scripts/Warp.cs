@@ -18,7 +18,7 @@ public class Warp : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(transform.position + " | " + Player.position);
+        //Debug.Log(transform.position + " | " + Player.position);
         if (Vector3.Distance(transform.position, Player.position) < MinDistance)
         {
             Vector3 angleToPlayer = (transform.position - Player.position).normalized;

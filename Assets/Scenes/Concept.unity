@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 160982307}
   - component: {fileID: 160982306}
   m_Layer: 0
-  m_Name: Cube (14)
+  m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -896,7 +896,7 @@ GameObject:
   - component: {fileID: 212649573}
   - component: {fileID: 212649572}
   m_Layer: 0
-  m_Name: Cube (7)
+  m_Name: InnerWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 238731309}
   - component: {fileID: 238731308}
   m_Layer: 0
-  m_Name: Cube (4)
+  m_Name: OuterWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1188,6 +1188,7 @@ MonoBehaviour:
   RotationSpeed: 3
   MovementSpeed: 5
   PlayerCamera: {fileID: 1311538974}
+  InteractRange: 10
 --- !u!54 &298618923
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1228,9 +1229,10 @@ GameObject:
   - component: {fileID: 392121024}
   - component: {fileID: 392121023}
   - component: {fileID: 392121022}
+  - component: {fileID: 392121026}
   m_Layer: 0
-  m_Name: Cube (13)
-  m_TagString: Untagged
+  m_Name: Door
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1311,6 +1313,21 @@ Transform:
   m_Father: {fileID: 101888948}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!114 &392121026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392121021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db6f2118fb5dc64b98e73829e9befdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateAmount: 90
+  RotateSpeed: 5
+  PivotDistance: 1
 --- !u!1001 &483096427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1393,7 +1410,7 @@ GameObject:
   - component: {fileID: 678425318}
   - component: {fileID: 678425317}
   m_Layer: 0
-  m_Name: Cube (17)
+  m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1488,7 +1505,7 @@ GameObject:
   - component: {fileID: 772751878}
   - component: {fileID: 772751877}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: OuterWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1582,9 +1599,10 @@ GameObject:
   - component: {fileID: 806782480}
   - component: {fileID: 806782479}
   - component: {fileID: 806782478}
+  - component: {fileID: 806782481}
   m_Layer: 0
-  m_Name: Cube (15)
-  m_TagString: Untagged
+  m_Name: Door
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1665,6 +1683,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806782476}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &806782481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806782476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db6f2118fb5dc64b98e73829e9befdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateAmount: 90
+  RotateSpeed: 5
+  PivotDistance: 1
 --- !u!1 &917244358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,7 +1711,7 @@ GameObject:
   - component: {fileID: 917244361}
   - component: {fileID: 917244360}
   m_Layer: 0
-  m_Name: Cube (16)
+  m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1847,7 +1880,7 @@ GameObject:
   - component: {fileID: 1012134316}
   - component: {fileID: 1012134315}
   m_Layer: 0
-  m_Name: Cube (5)
+  m_Name: InnerWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2043,7 +2076,7 @@ GameObject:
   - component: {fileID: 1325709644}
   - component: {fileID: 1325709643}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2231,7 +2264,7 @@ GameObject:
   - component: {fileID: 1473753862}
   - component: {fileID: 1473753861}
   m_Layer: 0
-  m_Name: Cube (9)
+  m_Name: InnerWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2326,7 +2359,7 @@ GameObject:
   - component: {fileID: 1517365985}
   - component: {fileID: 1517365984}
   m_Layer: 0
-  m_Name: Cube (10)
+  m_Name: InnerWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2420,9 +2453,10 @@ GameObject:
   - component: {fileID: 1581648156}
   - component: {fileID: 1581648155}
   - component: {fileID: 1581648154}
+  - component: {fileID: 1581648157}
   m_Layer: 0
-  m_Name: Cube (18)
-  m_TagString: Untagged
+  m_Name: Door
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2503,6 +2537,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581648152}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1581648157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581648152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db6f2118fb5dc64b98e73829e9befdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateAmount: 90
+  RotateSpeed: 5
+  PivotDistance: 1
 --- !u!1 &1682834635
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,7 +2565,7 @@ GameObject:
   - component: {fileID: 1682834637}
   - component: {fileID: 1682834636}
   m_Layer: 0
-  m_Name: Cube (11)
+  m_Name: InnerWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2611,7 +2660,7 @@ GameObject:
   - component: {fileID: 1734626924}
   - component: {fileID: 1734626923}
   m_Layer: 0
-  m_Name: Cube (8)
+  m_Name: InnerWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2706,7 +2755,7 @@ GameObject:
   - component: {fileID: 1737160970}
   - component: {fileID: 1737160969}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: OuterWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2801,7 +2850,7 @@ GameObject:
   - component: {fileID: 1775075557}
   - component: {fileID: 1775075556}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: OuterWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2992,12 +3041,12 @@ GameObject:
   - component: {fileID: 1945000681}
   - component: {fileID: 1945000680}
   m_Layer: 0
-  m_Name: Cube (12)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1945000680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3087,7 +3136,7 @@ GameObject:
   - component: {fileID: 1960636352}
   - component: {fileID: 1960636351}
   m_Layer: 0
-  m_Name: Cube (19)
+  m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3182,7 +3231,7 @@ GameObject:
   - component: {fileID: 2024846160}
   - component: {fileID: 2024846159}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: InnerWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3295,9 +3344,10 @@ GameObject:
   - component: {fileID: 2074165671}
   - component: {fileID: 2074165670}
   - component: {fileID: 2074165669}
+  - component: {fileID: 2074165672}
   m_Layer: 0
-  m_Name: Cube (20)
-  m_TagString: Untagged
+  m_Name: Door
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3378,6 +3428,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074165667}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2074165672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074165667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db6f2118fb5dc64b98e73829e9befdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateAmount: 90
+  RotateSpeed: 5
+  PivotDistance: 1
 --- !u!1 &2137392111 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 544e94e1996fc48489e7650698345f33, type: 3}
