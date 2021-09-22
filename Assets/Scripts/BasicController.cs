@@ -9,6 +9,9 @@ public class BasicController : MonoBehaviour
     private Rigidbody rb;
     public Transform PlayerCamera;
     public float InteractRange;
+    public float PickupRange;
+    public float HoldDistance;
+    private GameObject heldObject;
 
     void Start()
     {
@@ -27,10 +30,37 @@ public class BasicController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit rayhit;
-            if (Physics.Raycast(transform.position, transform.forward, out rayhit, InteractRange))
+            if (Physics.Raycast(PlayerCamera.position, PlayerCamera.forward, out rayhit, InteractRange))
             {
                 Debug.Log("Interaction ray hit " + rayhit.transform.name);
-                if (rayhit.transform.tag == "Door") rayhit.transform.GetComponent<Door>().Interact();
+                if (rayhit.transform.tag == "Door") rayhit.transform.GetComponent<IInteractable>().Interact();
+            }
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (heldObject != null)
+            {
+                heldObject.transform.SetParent(null);
+                heldObject.GetComponent<Rigidbody>().isKinematic = false;
+                heldObject = null;
+            }
+            else
+            {
+                RaycastHit rayhit;
+                if (Physics.Raycast(PlayerCamera.position, PlayerCamera.forward, out rayhit, PickupRange))
+                {
+                    Debug.Log("Pickup ray hit " + rayhit.transform.name);
+
+                    if (rayhit.transform.tag == "Pickup")
+                    {
+                        Transform pickup = rayhit.transform;
+                        pickup.forward = -transform.forward;
+                        pickup.position = PlayerCamera.position + (PlayerCamera.forward * HoldDistance);
+                        pickup.SetParent(PlayerCamera);
+                        pickup.GetComponent<Rigidbody>().isKinematic = true;
+                        heldObject = pickup.gameObject;
+                    }
+                }
             }
         }
     }
