@@ -9,6 +9,16 @@ public class Menu : MonoBehaviour
     public GameObject MenuUi, Journal, MainMenu;
     private bool menuActive, journalActive;
 
+    private void Start()
+    {
+
+        menuActive = true;
+        journalActive = true;
+
+        Cursor.lockState = CursorLockMode.None;
+
+    }
+
     private void Update()
     {
 
