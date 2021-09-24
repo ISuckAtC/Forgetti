@@ -4,34 +4,36 @@ using UnityEngine;
 
 public class HorizontalDoor : MonoBehaviour, IInteractable
 {
-    private bool open;
+    public bool open;
     private float startRotation;
     public float RotateAmount;
     public float RotateSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        startRotation = transform.rotation.eulerAngles.x;
+        startRotation = transform.localEulerAngles.x;
     }
 
     void FixedUpdate()
     {
         if (open)
         {
-            float delta = Mathf.DeltaAngle(transform.rotation.eulerAngles.x, startRotation + RotateAmount);
+            float delta = Mathf.Abs(Mathf.DeltaAngle(transform.localEulerAngles.x, startRotation + RotateAmount));
             if (delta != 0)
             {
-                transform.Rotate(transform.right, (delta < RotateSpeed ? delta : RotateSpeed));
+                if (delta < RotateSpeed) transform.localEulerAngles = new Vector3(startRotation + RotateAmount, transform.localEulerAngles.y, transform.localEulerAngles.z);
+                else transform.Rotate(RotateSpeed, 0, 0, Space.Self);
                 //transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.MoveTowards(transform.rotation.eulerAngles.y, startRotation + RotateAmount, RotateSpeed), transform.eulerAngles.z);
             }
         }
         else
         {
-            float delta = Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.x, startRotation));
+            float delta = Mathf.Abs(Mathf.DeltaAngle(transform.localEulerAngles.x, startRotation));
+            Debug.Log(delta);
             if (delta != 0)
             {
-                Debug.Log(delta);
-                transform.Rotate(delta < RotateSpeed ? -delta : -RotateSpeed, 0, 0, Space.World);
+                if (delta < RotateSpeed) transform.localEulerAngles = new Vector3(startRotation, transform.localEulerAngles.y, transform.localEulerAngles.z);
+                else transform.Rotate(-RotateSpeed, 0, 0, Space.Self);
                 //transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.MoveTowards(transform.rotation.eulerAngles.y, startRotation, RotateSpeed), transform.eulerAngles.z);
             }
         }
