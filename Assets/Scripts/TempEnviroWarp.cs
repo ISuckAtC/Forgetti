@@ -6,12 +6,13 @@ public class TempEnviroWarp : MonoBehaviour
 {
 
     public Transform PlayerTrans;
+    public bool Up = true;
 
     private void OnTriggerEnter(Collider col)
     {
 
         if(col.tag == "Player")
-            PlayerTrans.position = PlayerTrans.position + (Vector3.up * 10);
+            PlayerTrans.position = PlayerTrans.position + (Vector3.up * (Up ? 10 : -10));
 
     }
 
