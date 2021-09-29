@@ -79,7 +79,7 @@ public class PlayerMovementController : MonoBehaviour
 
         }
 
-        if(grounded == true || jumping != 0)
+        /*if(grounded == true || jumping != 0)
         {
 
             movementDir = (transform.forward * sprinting * Input.GetAxis("Vertical") * MovementSpeed) + new Vector3(0, rb.velocity.y + (jumping * JumpHeight), 0) + (transform.right * sprinting * Input.GetAxis("Horizontal") * MovementSpeed);
@@ -91,7 +91,9 @@ public class PlayerMovementController : MonoBehaviour
             movementDir = rb.velocity;
             groundCheckCD -= Time.deltaTime;
 
-        }
+        }*/
+
+        movementDir = (transform.forward * sprinting * Input.GetAxis("Vertical") * MovementSpeed) + new Vector3(0, rb.velocity.y + (jumping * JumpHeight), 0) + (transform.right * sprinting * Input.GetAxis("Horizontal") * MovementSpeed);
 
         rb.velocity = movementDir;
         
