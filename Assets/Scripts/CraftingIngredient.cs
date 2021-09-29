@@ -7,17 +7,7 @@ public class CraftingIngredient : MonoBehaviour
     public List<string> ReactiveIngredients;
     public List<GameObject> Reactions;
     public float ReactionForce;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void OnCollisionEnter(Collision c)
     {
