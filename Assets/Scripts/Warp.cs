@@ -33,7 +33,6 @@ public class Warp : MonoBehaviour
                 }
             }
             else cycled = false;
-
         }
     }
 }
