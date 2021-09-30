@@ -11,12 +11,11 @@ GameObject:
   - component: {fileID: 1393396625438391496}
   - component: {fileID: 2664316013942977389}
   - component: {fileID: 224469720586536871}
-  - component: {fileID: 1503339863948591876}
   - component: {fileID: 1503339863948591878}
   - component: {fileID: 1503339863948592121}
   m_Layer: 0
-  m_Name: Book
-  m_TagString: Untagged
+  m_Name: BookCrafting
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,23 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1503339863948591876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737692871270327922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ec60dab93ab3840a15f8106646d327, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ReactiveIngredients:
-  - Bookshelf
-  Reactions:
-  - {fileID: 8811923587532488280, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
-  ReactionForce: 5
 --- !u!54 &1503339863948591878
 Rigidbody:
   m_ObjectHideFlags: 0
