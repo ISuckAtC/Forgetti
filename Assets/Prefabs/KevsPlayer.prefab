@@ -34,6 +34,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 2466429690840199503}
+  - {fileID: 2017911979}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -150,9 +151,9 @@ MonoBehaviour:
   RotationSpeed: 0
   MovementSpeed: 0
   PlayerCamera: {fileID: 2466429690840199503}
-  InteractRange: 0
-  PickupRange: 0
-  HoldDistance: 0
+  InteractRange: 4
+  PickupRange: 4
+  HoldDistance: 3
 --- !u!1 &2466429690840199500
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,3 +252,77 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sprinting: 0
   InputSensitivity: 4
+--- !u!1001 &5766468435883720563
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2466429690084112976}
+    m_Modifications:
+    - target: {fileID: 5766468435969635273, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691671, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: CamController
+      value: 
+      objectReference: {fileID: 2466429690840199488}
+    - target: {fileID: 5766468437624691671, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: PlayerMovemenet
+      value: 
+      objectReference: {fileID: 2466429690084112981}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5766468437624691673, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+      propertyPath: m_Name
+      value: ClipBoardController
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+--- !u!4 &2017911979 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5766468437624691672, guid: aa7e82ebfe2c48e48b93fec429985172, type: 3}
+  m_PrefabInstance: {fileID: 5766468435883720563}
+  m_PrefabAsset: {fileID: 0}
