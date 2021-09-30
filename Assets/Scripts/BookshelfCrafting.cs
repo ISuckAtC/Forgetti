@@ -20,7 +20,7 @@ public class BookshelfCrafting : CraftingIngredient
         {
             o.GetComponent<Collider>().enabled = false;
             o.GetComponent<Rigidbody>().isKinematic = true;
-            o.transform.localPosition = new Vector3(transform.position.x, transform.position.y + 0.05f + (0.65f * BookPosition), transform.position.z);
+            o.transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y + 0.05f + (0.65f * BookPosition), transform.localPosition.z);
         }
         BookPosition++;
     }
