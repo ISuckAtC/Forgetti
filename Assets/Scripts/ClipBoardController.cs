@@ -7,6 +7,8 @@ public class ClipBoardController : MonoBehaviour
 {
 
     public GameObject ClipBoardObj, TempMenu, TempJournal;
+    public PlayerMovementController PlayerMovemenet;
+    public CameraController CamController;
     private bool menuActive;
     private LayerMask playerMask;
 
@@ -106,7 +108,23 @@ public class ClipBoardController : MonoBehaviour
     private void UpdateClipBoardItems()
     {
 
+        if(menuActive)
+        {
+
+            Cursor.lockState = CursorLockMode.None;
+            Camera.main.transform.LookAt(ClipBoardObj.transform, Vector3.up);
+
+        }
+        else
+        {
+
+            Cursor.lockState = CursorLockMode.Locked;
+
+        }
+
         ClipBoardObj.SetActive(menuActive);
+        PlayerMovemenet.enabled = !menuActive;
+        CamController.enabled = !menuActive;
 
     }
 
