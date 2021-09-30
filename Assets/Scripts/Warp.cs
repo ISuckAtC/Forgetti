@@ -13,6 +13,7 @@ public class Warp : MonoBehaviour
     private MeshRenderer mr;
     void Start()
     {
+        if (Player == null) Player = GameObject.Find("Player").transform;
         mr = GetComponent<MeshRenderer>();
     }
 
@@ -33,7 +34,6 @@ public class Warp : MonoBehaviour
                 }
             }
             else cycled = false;
-
         }
     }
 }

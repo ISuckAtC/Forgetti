@@ -1,16 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class CraftingIngredient : MonoBehaviour
 {
     public List<string> ReactiveIngredients;
     public List<GameObject> Reactions;
     public float ReactionForce;
-    
+
+    public virtual void Craft(Collision c)
+    {
+        GameObject g = Instantiate(Reactions[ReactiveIngredients.IndexOf(c.transform.name)], c.contacts[0].point, Quaternion.Euler(c.contacts[0].normal));
+        g.GetComponent<Rigidbody>().velocity += new Vector3(0, ReactionForce, 0);
+        Destroy(c.gameObject);
+        Destroy(gameObject);
+    }
 
     public void OnCollisionEnter(Collision c)
     {
+        Debug.Log(name + " hit " + c.transform.name);
         if (ReactiveIngredients.Contains(c.transform.name))
         {
             int index = ReactiveIngredients.IndexOf(c.transform.name);
@@ -20,10 +29,7 @@ public class CraftingIngredient : MonoBehaviour
             }
             else
             {
-                GameObject g = Instantiate(Reactions[index], c.contacts[0].point, Quaternion.Euler(c.contacts[0].normal));
-                g.GetComponent<Rigidbody>().velocity += new Vector3(0,ReactionForce,0);
-                Destroy(c.gameObject);
-                Destroy(gameObject);
+                Craft(c);
             }
         }
     }

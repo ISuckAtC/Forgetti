@@ -10,11 +10,14 @@ public class Door : MonoBehaviour, IInteractable
     public float RotateSpeed;
     public float PivotDistance;
     private Vector3 pivotPoint;
+    public GameObject[] Links {get; set;}
+    public GameObject[] SetLinks;
     // Start is called before the first frame update
     void Start()
     {
         startRotation = transform.rotation.eulerAngles.y;
         pivotPoint = transform.position + (transform.forward * PivotDistance);
+        Links = SetLinks;
     }
 
     // Update is called once per frame
@@ -39,16 +42,19 @@ public class Door : MonoBehaviour, IInteractable
             float delta = Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.y, startRotation));
             if (delta != 0)
             {
-                Debug.Log(delta);
                 transform.RotateAround(pivotPoint, Vector3.up, delta < RotateSpeed ? -delta : -RotateSpeed);
                 //transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.MoveTowards(transform.rotation.eulerAngles.y, startRotation, RotateSpeed), transform.eulerAngles.z);
             }
         }
     }
 
-    public void Interact()
+    public void Interact(bool chain = false)
     {
         open = !open;
+        if (!chain)
+        {
+            foreach(GameObject o in Links) o.GetComponent<Door>().Interact(true);
+        }
         Debug.Log("Interacted with " + name);
     }
 }
