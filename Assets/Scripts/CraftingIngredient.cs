@@ -19,6 +19,7 @@ public class CraftingIngredient : MonoBehaviour
 
     public void OnCollisionEnter(Collision c)
     {
+        Debug.Log(name + " hit " + c.transform.name);
         if (ReactiveIngredients.Contains(c.transform.name))
         {
             int index = ReactiveIngredients.IndexOf(c.transform.name);

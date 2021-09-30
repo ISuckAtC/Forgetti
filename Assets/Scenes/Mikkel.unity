@@ -457,6 +457,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &19621484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -803,7 +804,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c98d0146a52461c438d8d4fe62dc9185, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book (2)
+      value: Book 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -943,6 +944,48 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &60871339 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8811923587532488280, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+  m_PrefabInstance: {fileID: 1048828024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &60871340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60871339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d43863e672a7940ba36eb8328bfd9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactiveIngredients:
+  - Book 1
+  - Book 2
+  - Book 3
+  Reactions:
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  ReactionForce: 0
+--- !u!54 &60871341
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60871339}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1401,6 +1444,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &90550235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2483,6 +2527,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &189942430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2784,6 +2829,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &203679455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4274,7 +4320,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c98d0146a52461c438d8d4fe62dc9185, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book (2)
+      value: Book 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -4545,6 +4591,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &307672279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6073,7 +6120,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 920d723ee2cf37946a715b0edddbef03, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book (1)
+      value: Book 2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -6225,6 +6272,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &478541795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7010,6 +7058,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &536960994
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7311,6 +7360,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &540929788
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7422,6 +7472,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &543804645
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7533,6 +7584,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &549384162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7664,7 +7716,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 880e9b9abf1f5ab4ebffd9c0f1b39247, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book
+      value: Book 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -8109,6 +8161,9 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks:
+  - {fileID: 1412226728}
+  - {fileID: 737686956}
 --- !u!65 &592779970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8413,6 +8468,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &609495499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8524,6 +8580,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &613956825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8904,7 +8961,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 880e9b9abf1f5ab4ebffd9c0f1b39247, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book
+      value: Book 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -9951,6 +10008,7 @@ Transform:
   - {fileID: 913728530}
   - {fileID: 56333905}
   - {fileID: 897604055}
+  - {fileID: 1715994012}
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10098,6 +10156,9 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks:
+  - {fileID: 1412226728}
+  - {fileID: 592779967}
 --- !u!65 &737686959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10376,7 +10437,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 920d723ee2cf37946a715b0edddbef03, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book (1)
+      value: Book 2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -10512,6 +10573,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 781289413}
   m_CullTransparentMesh: 1
+--- !u!1 &784424187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8811923587532488280, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+  m_PrefabInstance: {fileID: 2125295577}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &784424188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784424187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d43863e672a7940ba36eb8328bfd9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactiveIngredients:
+  - Book 1
+  - Book 2
+  - Book 3
+  Reactions:
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  ReactionForce: 0
+--- !u!54 &784424189
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784424187}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &790557818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10761,6 +10864,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &792937059
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11165,6 +11269,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &812371584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11649,7 +11754,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 880e9b9abf1f5ab4ebffd9c0f1b39247, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book
+      value: Book 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -13221,7 +13326,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 880e9b9abf1f5ab4ebffd9c0f1b39247, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book
+      value: Book 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -13278,6 +13383,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &969158409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13618,7 +13724,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 920d723ee2cf37946a715b0edddbef03, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book (1)
+      value: Book 2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -14344,6 +14450,48 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -9178328143816956108, guid: cce1f2193251e974489a863ca1ed3764, type: 3}
+--- !u!1 &1081809028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8811923587532488280, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+  m_PrefabInstance: {fileID: 1715994011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1081809029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081809028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d43863e672a7940ba36eb8328bfd9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactiveIngredients:
+  - Book 1
+  - Book 2
+  - Book 3
+  Reactions:
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  ReactionForce: 0
+--- !u!54 &1081809030
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081809028}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1083940663
 GameObject:
   m_ObjectHideFlags: 0
@@ -15282,7 +15430,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c98d0146a52461c438d8d4fe62dc9185, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book (2)
+      value: Book 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -15899,6 +16047,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &1192582993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16280,6 +16429,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &1225010156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16391,6 +16541,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &1227630004
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16920,6 +17071,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &1264596722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18187,6 +18339,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1390806853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8811923587532488280, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+  m_PrefabInstance: {fileID: 1346036942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1390806854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390806853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d43863e672a7940ba36eb8328bfd9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactiveIngredients:
+  - Book 1
+  - Book 2
+  - Book 3
+  Reactions:
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  ReactionForce: 0
+--- !u!54 &1390806855
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390806853}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1395805232
 GameObject:
   m_ObjectHideFlags: 0
@@ -18505,6 +18699,9 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks:
+  - {fileID: 737686956}
+  - {fileID: 592779967}
 --- !u!65 &1412226731
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18636,7 +18833,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c98d0146a52461c438d8d4fe62dc9185, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book (2)
+      value: Book 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -19070,6 +19267,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &1436664899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19466,6 +19664,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &1484920022
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21601,6 +21800,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &1643989413
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22564,6 +22764,76 @@ Transform:
   m_Father: {fileID: 1333394851}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1001 &1715994011
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 730828885}
+    m_Modifications:
+    - target: {fileID: 3618180161219485169, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5470972
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.7289996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.305999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811923587532488280, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+      propertyPath: m_Name
+      value: Bookshelf (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+--- !u!4 &1715994012 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7286050391755416779, guid: e92ffc0e34c4bf04a906b485763d79f0, type: 3}
+  m_PrefabInstance: {fileID: 1715994011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1718076436
 GameObject:
   m_ObjectHideFlags: 0
@@ -23060,6 +23330,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &1748772819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23534,7 +23805,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 920d723ee2cf37946a715b0edddbef03, type: 2}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_Name
-      value: Book (1)
+      value: Book 2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 28b233c663c900749b2d845b5c20c2d5, type: 3}
       propertyPath: m_TagString
@@ -24112,6 +24383,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &1849163577
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26580,6 +26852,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!65 &2122969566
 BoxCollider:
   m_ObjectHideFlags: 0

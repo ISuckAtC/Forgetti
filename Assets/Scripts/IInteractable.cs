@@ -4,5 +4,6 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    public abstract void Interact();
+    public GameObject[] Links {get; set;}
+    public abstract void Interact(bool chain = false);
 }

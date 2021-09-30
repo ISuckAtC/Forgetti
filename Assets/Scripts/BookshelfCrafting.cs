@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class BookshelfCrafting : CraftingIngredient
 {
+    public static int BookPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,10 @@ public class BookshelfCrafting : CraftingIngredient
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Pickup").Where(x => x.name == c.transform.name).ToArray();
         foreach (GameObject o in objects)
         {
-            o.transform.localPosition = new Vector3(-1.729f, 1.07f, -13.306f);
+            o.GetComponent<Collider>().enabled = false;
+            o.GetComponent<Rigidbody>().isKinematic = true;
+            o.transform.localPosition = new Vector3(-1.729f, 1.1f + (0.65f * BookPosition), -13.306f);
         }
+        BookPosition++;
     }
 }

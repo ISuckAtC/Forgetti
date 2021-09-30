@@ -8,6 +8,7 @@ public class HorizontalDoor : MonoBehaviour, IInteractable
     private float startRotation;
     public float RotateAmount;
     public float RotateSpeed;
+    public GameObject[] Links {get; set;}
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,6 @@ public class HorizontalDoor : MonoBehaviour, IInteractable
         else
         {
             float delta = Mathf.Abs(Mathf.DeltaAngle(transform.localEulerAngles.x, startRotation));
-            Debug.Log(delta);
             if (delta != 0)
             {
                 if (delta < RotateSpeed) transform.localEulerAngles = new Vector3(startRotation, transform.localEulerAngles.y, transform.localEulerAngles.z);
@@ -39,7 +39,7 @@ public class HorizontalDoor : MonoBehaviour, IInteractable
         }
     }
 
-    public void Interact()
+    public void Interact(bool chain = false)
     {
         open = !open;
         Debug.Log("Interacted with " + name);

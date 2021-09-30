@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3823238292046537705}
   - component: {fileID: 2508306366108041056}
   - component: {fileID: 2508306366108041059}
-  - component: {fileID: 7267562703579130190}
+  - component: {fileID: -6462747423846826066}
   m_Layer: 0
   m_Name: PotWithDirt
   m_TagString: Pickup
@@ -114,7 +114,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5076798556035486163, guid: c13b98f71da2dbf43bb7dbdab1e568cc, type: 3}
---- !u!114 &7267562703579130190
+--- !u!114 &-6462747423846826066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3318627944401027644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa369b1ad4d5e6a429cef7b184ee70f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 41ec60dab93ab3840a15f8106646d327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ReactiveIngredients:
