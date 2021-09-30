@@ -958,6 +958,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!1 &5965213978073201564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1165,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!1 &5965213978496682059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,6 +1817,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!1 &5965213979064413368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,7 +2121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5965213979313951243
 Transform:
   m_ObjectHideFlags: 0
@@ -2754,6 +2757,7 @@ MonoBehaviour:
   RotateAmount: 90
   RotateSpeed: 5
   PivotDistance: 1
+  SetLinks: []
 --- !u!1 &5965213979867411021
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,7 +32,7 @@ public class CameraController : MonoBehaviour
         if(Sprinting)
         {
 
-            Camera.main.fieldOfView = fov + 10;
+            Camera.main.fieldOfView = fov + 0;
 
         }
         else
