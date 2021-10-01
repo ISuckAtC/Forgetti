@@ -42,8 +42,8 @@ public class BasicController : MonoBehaviour
         {
             if (heldObject != null)
             {
-                heldObject.transform.SetParent(null);
-                heldObject.GetComponent<Rigidbody>().isKinematic = false;
+                heldObject.GetComponent<Rigidbody>().useGravity = true;
+                Destroy(heldObject.GetComponent<Pickup>());
                 heldObject = null;
             }
             else
@@ -56,10 +56,8 @@ public class BasicController : MonoBehaviour
                     if (rayhit.transform.tag == "Pickup")
                     {
                         Transform pickup = rayhit.transform;
-                        pickup.forward = -transform.forward;
-                        pickup.position = PlayerCamera.position + (PlayerCamera.forward * HoldDistance);
-                        pickup.SetParent(PlayerCamera);
-                        pickup.GetComponent<Rigidbody>().isKinematic = true;
+                        pickup.gameObject.GetComponent<Rigidbody>().useGravity = false;
+                        pickup.gameObject.AddComponent<Pickup>().Initialize(PlayerCamera, HoldDistance);
                         heldObject = pickup.gameObject;
                     }
                 }
