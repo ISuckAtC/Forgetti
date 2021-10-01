@@ -11,6 +11,9 @@ public class BasicController : MonoBehaviour
     public float InteractRange;
     public float PickupRange;
     public float HoldDistance;
+    public float MinDistance = 1;
+    public float MaxDistance = 5;
+    public float DistanceSensitivity = 1;
     public float HoldVelocityMultiplier;
     private GameObject heldObject;
     static public GameObject Player;
@@ -63,6 +66,13 @@ public class BasicController : MonoBehaviour
                     }
                 }
             }
+        }
+
+        if (Input.mouseScrollDelta.y != 0 && heldObject != null)
+        {
+            Pickup pickup = heldObject.GetComponent<Pickup>();
+            float newDistance = Mathf.Clamp(pickup.Distance + (Input.mouseScrollDelta.y * DistanceSensitivity), MinDistance, MaxDistance);
+            pickup.Distance = newDistance;
         }
     }
 }

@@ -5,21 +5,21 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     private Transform playerCam;    
-    private float distance;
+    public float Distance;
     private float velocityMultiplier;
     private Rigidbody rb;
     
     public void Initialize(Transform _playerCam, float _distance, float _velocityMultiplier)
     {
         playerCam = _playerCam;
-        distance = _distance;
+        Distance = _distance;
         velocityMultiplier = _velocityMultiplier;
         rb = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
     {
-        Vector3 targetPosition = playerCam.position + (playerCam.forward * distance);
-        rb.velocity = (targetPosition - transform.position) * distance * velocityMultiplier;
+        Vector3 targetPosition = playerCam.position + (playerCam.forward * Distance);
+        rb.velocity = (targetPosition - transform.position) * Distance * velocityMultiplier;
     }
 }
