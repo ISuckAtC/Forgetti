@@ -673,6 +673,10 @@ PrefabInstance:
       propertyPath: InteractRange
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2466429690084112979, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
+      propertyPath: HoldVelocityMultiplier
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2466429690084112988, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
       propertyPath: m_Name
       value: KevsPlayer
@@ -1216,17 +1220,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1670094040}
     m_Modifications:
+    - target: {fileID: 5965213978115510707, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.886
+      objectReference: {fileID: 0}
     - target: {fileID: 5965213978535663712, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
       propertyPath: m_LocalScale.z
-      value: 19.066122
+      value: 13.815693
       objectReference: {fileID: 0}
     - target: {fileID: 5965213978566566848, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
       propertyPath: m_LocalScale.z
       value: 22.694311
       objectReference: {fileID: 0}
+    - target: {fileID: 5965213979064413369, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7.5100827
+      objectReference: {fileID: 0}
+    - target: {fileID: 5965213979064413369, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.752
+      objectReference: {fileID: 0}
+    - target: {fileID: 5965213979313951242, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5965213979594666781, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
       propertyPath: m_LocalScale.z
-      value: 10.456842
+      value: 6.876962
       objectReference: {fileID: 0}
     - target: {fileID: 5965213979643354344, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
       propertyPath: m_Name
@@ -1275,6 +1295,14 @@ PrefabInstance:
     - target: {fileID: 5965213979643354345, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051335918624218287, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.753
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051335918624218287, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
@@ -2018,7 +2046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1947419585}
   m_Layer: 0
-  m_Name: LevelMark
+  m_Name: DisplayFloorWithTask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
