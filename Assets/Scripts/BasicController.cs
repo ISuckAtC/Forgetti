@@ -11,6 +11,7 @@ public class BasicController : MonoBehaviour
     public float InteractRange;
     public float PickupRange;
     public float HoldDistance;
+    public float HoldVelocityMultiplier;
     private GameObject heldObject;
     static public GameObject Player;
 
@@ -57,7 +58,7 @@ public class BasicController : MonoBehaviour
                     {
                         Transform pickup = rayhit.transform;
                         pickup.gameObject.GetComponent<Rigidbody>().useGravity = false;
-                        pickup.gameObject.AddComponent<Pickup>().Initialize(PlayerCamera, HoldDistance);
+                        pickup.gameObject.AddComponent<Pickup>().Initialize(PlayerCamera, HoldDistance, HoldVelocityMultiplier);
                         heldObject = pickup.gameObject;
                     }
                 }
