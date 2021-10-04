@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ClipBoardController : MonoBehaviour
 {
     
+    public static ClipBoardController ClipBoardCtrl;
     public Dictionary<string, GameObject> TaskTextObj;
     public GameObject ClipBoardObj, TempMenu, TempJournal;
     public PlayerMovementController PlayerMovemenet;
@@ -18,6 +19,7 @@ public class ClipBoardController : MonoBehaviour
 
         playerMask = ~(LayerMask.NameToLayer("Player") << 1);
         menuActive = false;
+        ClipBoardCtrl = this;
         
     }
 
