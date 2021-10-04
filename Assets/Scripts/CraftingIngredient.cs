@@ -2,16 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Linq;
 
 public class CraftingIngredient : MonoBehaviour
 {
-    public List<string> ReactiveIngredients;
-    public List<GameObject> Reactions;
+    public Dictionary<string, GameObject> Reactions;
+    [SerializeField]public List<string> ReactionIngredients;
+    public List<GameObject> ReactionResults;
+    public List<string> test;
     public float ReactionForce;
+    public float CraftingDelay;
 
-    public virtual void Craft(Collision c)
+    public void Start()
     {
-        GameObject g = Instantiate(Reactions[ReactiveIngredients.IndexOf(c.transform.name)], c.contacts[0].point, Quaternion.Euler(c.contacts[0].normal));
+        Reactions = new Dictionary<string, GameObject>();
+        for (int i = 0; i < ReactionIngredients.Count; ++i)
+        {
+            Reactions.Add(ReactionIngredients[i], ReactionResults[i]);
+        }
+    }
+
+    public virtual IEnumerator Craft(Collision c, float delay = 0)
+    {
+        GameObject prefab = Reactions[c.transform.name];
+        Vector3 position = c.contacts[0].point;
+        Quaternion rotation = Quaternion.Euler(c.contacts[0].normal);
+
+
+        yield return new WaitForSeconds(delay);
+        GameObject g = Instantiate(prefab, position, rotation);
         g.GetComponent<Rigidbody>().velocity += new Vector3(0, ReactionForce, 0);
         Destroy(c.gameObject);
         Destroy(gameObject);
@@ -20,17 +39,11 @@ public class CraftingIngredient : MonoBehaviour
     public void OnCollisionEnter(Collision c)
     {
         Debug.Log(name + " hit " + c.transform.name);
-        if (ReactiveIngredients.Contains(c.transform.name))
+        if (Reactions.ContainsKey(c.transform.name))
         {
-            int index = ReactiveIngredients.IndexOf(c.transform.name);
-            if (index > Reactions.Count)
-            {
-                Debug.Log("Reaction not specified for [" + transform.name + " + " + c.transform.name + "]");
-            }
-            else
-            {
-                Craft(c);
-            }
+            Destroy(c.transform.gameObject.GetComponent<Rigidbody>());
+            c.transform.parent = transform;
+            StartCoroutine(Craft(c, CraftingDelay));
         }
     }
 }
