@@ -898,6 +898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a9c611936071d4ca42e22afd318109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FinishedTaskColour: {r: 0.16313633, g: 0.735849, b: 0.605141, a: 1}
   TaskTexts: []
   ClipBoardObj: {fileID: 5766468435969635273}
   TempMenu: {fileID: 5766468437246022711}
@@ -1285,7 +1286,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278255616
 --- !u!1 &9201874899835791096
 GameObject:
   m_ObjectHideFlags: 0

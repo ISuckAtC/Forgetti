@@ -7,6 +7,7 @@ public class ClipBoardController : MonoBehaviour
 {
     
     public static ClipBoardController ClipBoardCtrl;
+    public Color FinishedTaskColour;
     public Dictionary<string, GameObject> TaskTextDir;
     public GameObject[] TaskTexts;
     public GameObject ClipBoardObj, TempMenu, TempJournal;
@@ -22,10 +23,13 @@ public class ClipBoardController : MonoBehaviour
         menuActive = false;
         ClipBoardCtrl = this;
 
+        TaskTextDir = new Dictionary<string, GameObject>();
+
         foreach (GameObject go in TaskTexts)
         {
 
             TaskTextDir.Add(go.name, go);
+            Debug.Log("Added: " + go.name);
             
         }
         
@@ -123,7 +127,7 @@ public class ClipBoardController : MonoBehaviour
         {
 
             TaskTextDir.TryGetValue(TaskName, out GameObject tempGO);
-            Destroy(tempGO);
+            tempGO.GetComponent<TextMesh>().color = FinishedTaskColour;
 
         }
 
