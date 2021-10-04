@@ -137,11 +137,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: CraftingDelay
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: ReactionForce
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: test.Array.size
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: test.Array.data[0]
@@ -164,8 +168,12 @@ PrefabInstance:
       value: a
       objectReference: {fileID: 0}
     - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: ReactionTask.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: ReactionResults.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: ReactionIngedients.Array.size
@@ -174,14 +182,14 @@ PrefabInstance:
     - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: ReactionResults.Array.data[0]
       value: 
-      objectReference: {fileID: 3318627944401027644, guid: 6fbdb5027d85dce41b1f548764d01ee8, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: ReactionIngredients.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: ReactionIngredients.Array.data[0]
-      value: Dirtbag
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 912865553628838178, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: m_Materials.Array.data[0]

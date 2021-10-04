@@ -17,8 +17,11 @@ public class CraftingEditor : Editor
 
         CraftingIngredient script = (CraftingIngredient)target;
 
-        EditorGUILayout.FloatField("Reaction Force", script.ReactionForce);
-        EditorGUILayout.FloatField("Crafting Delay", script.CraftingDelay);
+        float force = EditorGUILayout.FloatField("Reaction Force", script.ReactionForce);
+        float delay = EditorGUILayout.FloatField("Crafting Delay", script.CraftingDelay);
+
+        script.ReactionForce = force;
+        script.CraftingDelay = delay;
 
         GUIStyle style = new GUIStyle();
         style.fontStyle = FontStyle.Bold;
