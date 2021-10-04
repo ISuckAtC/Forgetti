@@ -17,8 +17,11 @@ public class CraftingEditor : Editor
 
         CraftingIngredient script = (CraftingIngredient)target;
 
-        EditorGUILayout.FloatField("Reaction Force", script.ReactionForce);
-        EditorGUILayout.FloatField("Crafting Delay", script.CraftingDelay);
+        float force = EditorGUILayout.FloatField("Reaction Force", script.ReactionForce);
+        float delay = EditorGUILayout.FloatField("Crafting Delay", script.CraftingDelay);
+
+        script.ReactionForce = force;
+        script.CraftingDelay = delay;
 
         GUIStyle style = new GUIStyle();
         style.fontStyle = FontStyle.Bold;
@@ -33,12 +36,14 @@ public class CraftingEditor : Editor
         {
             script.ReactionIngredients.Add("");
             script.ReactionResults.Add(null);
+            script.ReactionTask.Add("");
         }
         if (GUILayout.Button("Remove"))
         {
             int index = script.ReactionIngredients.Count - 1;
             script.ReactionIngredients.RemoveAt(index);
             script.ReactionResults.RemoveAt(index);
+            script.ReactionTask.RemoveAt(index);
         }
         GUILayout.EndHorizontal();
 
@@ -46,15 +51,19 @@ public class CraftingEditor : Editor
         for (int i = 0; i < script.ReactionIngredients.Count; ++i)
         {
             EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.LabelField("Key: ", GUILayout.Width(50));
+            EditorGUILayout.LabelField("Ingredient: ", GUILayout.Width(60));
             string key = EditorGUILayout.TextField(script.ReactionIngredients[i], GUILayout.MaxWidth(100));
-            EditorGUILayout.Space(20, false);
-            EditorGUILayout.LabelField("Value: ", GUILayout.Width(50));
+            EditorGUILayout.Space(0, false);
+            EditorGUILayout.LabelField("Result: ", GUILayout.Width(40));
             GameObject value = (GameObject)EditorGUILayout.ObjectField(script.ReactionResults[i], typeof(GameObject), true, GUILayout.Width(100));
+            EditorGUILayout.Space(0, false);
+            EditorGUILayout.LabelField("Task: ", GUILayout.Width(33));
+            string task = EditorGUILayout.TextField(script.ReactionTask[i], GUILayout.MaxWidth(100));
             EditorGUILayout.EndHorizontal();
 
             script.ReactionIngredients[i] = key;
             script.ReactionResults[i] = value;
+            script.ReactionTask[i] = task;
         }
 
         EditorUtility.SetDirty(script);

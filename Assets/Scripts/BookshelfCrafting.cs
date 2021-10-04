@@ -12,6 +12,9 @@ public class BookshelfCrafting : CraftingIngredient
         yield return new WaitForSeconds(delay);
         BasicController.Player.transform.Translate(new Vector3(0, 10, 0), Space.World);
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Pickup").Where(x => x.name == c.transform.name).ToArray();
+
+        ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
+
         foreach (GameObject o in objects)
         {
             o.GetComponent<Collider>().enabled = false;
