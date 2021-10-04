@@ -135,6 +135,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: CraftingDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: test.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: test.Array.data[0]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: test.Array.data[1]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: test.Array.data[2]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: test.Array.data[3]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: test.Array.data[4]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: ReactionResults.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: ReactionIngedients.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: ReactionResults.Array.data[0]
+      value: 
+      objectReference: {fileID: 3318627944401027644, guid: 6fbdb5027d85dce41b1f548764d01ee8, type: 3}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: ReactionIngredients.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 567275729858321815, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+      propertyPath: ReactionIngredients.Array.data[0]
+      value: Dirtbag
+      objectReference: {fileID: 0}
     - target: {fileID: 912865553628838178, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

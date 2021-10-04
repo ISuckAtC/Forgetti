@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BasicController : MonoBehaviour
 {
@@ -75,4 +76,17 @@ public class BasicController : MonoBehaviour
             pickup.Distance = newDistance;
         }
     }
+
+    [ContextMenu("Move Up 1 Floor")]
+    public void MoveUp()
+    {
+        transform.Translate(new Vector3(0, 10, 0));
+    }
+
+    [ContextMenu("Move Down 1 Floor")]
+    public void MoveDown()
+    {
+        transform.Translate(new Vector3(0, -10, 0));
+    }
+    
 }

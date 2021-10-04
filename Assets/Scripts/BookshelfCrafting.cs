@@ -6,14 +6,10 @@ using UnityEngine;
 public class BookshelfCrafting : CraftingIngredient
 {
     public static int BookPosition;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    public override void Craft(Collision c)
+    public override IEnumerator Craft(Collision c, float delay = 0)
     {
+        yield return new WaitForSeconds(delay);
         BasicController.Player.transform.Translate(new Vector3(0, 10, 0), Space.World);
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Pickup").Where(x => x.name == c.transform.name).ToArray();
         foreach (GameObject o in objects)
