@@ -857,11 +857,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d43863e672a7940ba36eb8328bfd9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReactiveIngredients:
-  - BookCrafting
-  Reactions:
-  - {fileID: 1737692871270327922, guid: 257ea04e6a1a99c41ae585681dfb29b2, type: 3}
+  ReactionIngredients: []
+  ReactionResults: []
+  ReactionTask: []
+  test: []
   ReactionForce: 10
+  CraftingDelay: 0
 --- !u!54 &4379394172346559163
 Rigidbody:
   m_ObjectHideFlags: 0

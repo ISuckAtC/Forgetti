@@ -19,9 +19,13 @@ public class BasicController : MonoBehaviour
     private GameObject heldObject;
     static public GameObject Player;
 
-    void Start()
+    void Awake()
     {
         Player = gameObject;
+    }
+    void Start()
+    {
+        
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
     }
