@@ -7,7 +7,8 @@ public class ClipBoardController : MonoBehaviour
 {
     
     public static ClipBoardController ClipBoardCtrl;
-    public Dictionary<string, GameObject> TaskTextObj;
+    public Dictionary<string, GameObject> TaskTextDir;
+    public GameObject[] TaskTexts;
     public GameObject ClipBoardObj, TempMenu, TempJournal;
     public PlayerMovementController PlayerMovemenet;
     public CameraController CamController;
@@ -20,6 +21,13 @@ public class ClipBoardController : MonoBehaviour
         playerMask = ~(LayerMask.NameToLayer("Player") << 1);
         menuActive = false;
         ClipBoardCtrl = this;
+
+        foreach (GameObject go in TaskTexts)
+        {
+
+            TaskTextDir.Add(go.name, go);
+            
+        }
         
     }
 
@@ -111,7 +119,13 @@ public class ClipBoardController : MonoBehaviour
     public void UpdateJournal(string TaskName)
     {
 
+        if(TaskTextDir.ContainsKey(TaskName))
+        {
 
+            TaskTextDir.TryGetValue(TaskName, out GameObject tempGO);
+            Destroy(tempGO);
+
+        }
 
     }
 
