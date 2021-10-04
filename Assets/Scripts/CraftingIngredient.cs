@@ -9,6 +9,7 @@ public class CraftingIngredient : MonoBehaviour
     public Dictionary<string, GameObject> Reactions;
     [SerializeField]public List<string> ReactionIngredients;
     public List<GameObject> ReactionResults;
+    public List<string> ReactionTask;
     public List<string> test;
     public float ReactionForce;
     public float CraftingDelay;
