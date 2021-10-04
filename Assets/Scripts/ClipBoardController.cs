@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ClipBoardController : MonoBehaviour
 {
-
+    
+    public Dictionary<string, GameObject> TaskTextObj;
     public GameObject ClipBoardObj, TempMenu, TempJournal;
     public PlayerMovementController PlayerMovemenet;
     public CameraController CamController;
@@ -42,7 +43,7 @@ public class ClipBoardController : MonoBehaviour
                     
                     case "Resume":
                     menuActive = false;
-                    UpdateClipBoardItems();
+                    UpdateClipBoard();
                     break;
 
                     case "Journal":
@@ -85,7 +86,7 @@ public class ClipBoardController : MonoBehaviour
 
         }
 
-        UpdateClipBoardItems();
+        UpdateClipBoard();
 
     }
 
@@ -105,7 +106,14 @@ public class ClipBoardController : MonoBehaviour
 
     }
 
-    private void UpdateClipBoardItems()
+    public void UpdateJournal(string TaskName)
+    {
+
+
+
+    }
+
+    private void UpdateClipBoard()
     {
 
         if(menuActive)

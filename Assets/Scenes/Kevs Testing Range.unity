@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &335130194
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &668581789
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -331,11 +331,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2466429690084112976, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.61
+      value: 2.06
       objectReference: {fileID: 0}
     - target: {fileID: 2466429690084112976, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.32
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 2466429690084112976, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -365,6 +365,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2466429690084112979, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
+      propertyPath: HoldVelocityMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2466429690084112988, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
       propertyPath: m_Name
       value: KevsPlayer
@@ -391,6 +395,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 884559565}
+    - target: {fileID: 5965213979233184546, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 14.984094
+      objectReference: {fileID: 0}
     - target: {fileID: 5965213979643354344, guid: 22e09d7263ae77846a4ec8c9872e6edf, type: 3}
       propertyPath: m_Name
       value: ProtoHouseLayout
@@ -459,7 +467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1655931826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -647,7 +655,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &2077160921
 BoxCollider:
   m_ObjectHideFlags: 0
