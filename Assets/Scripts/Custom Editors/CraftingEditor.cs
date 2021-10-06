@@ -34,12 +34,18 @@ public class CraftingEditor : Editor
 
         if (GUILayout.Button("Add"))
         {
+            if (script.ReactionIngredients == null) script.ReactionIngredients = new List<string>();
+            if (script.ReactionResults == null) script.ReactionResults = new List<GameObject>();
+            if (script.ReactionTask == null) script.ReactionTask = new List<string>();
             script.ReactionIngredients.Add("");
             script.ReactionResults.Add(null);
             script.ReactionTask.Add("");
         }
         if (GUILayout.Button("Remove"))
         {
+            if (script.ReactionIngredients == null) script.ReactionIngredients = new List<string>();
+            if (script.ReactionResults == null) script.ReactionResults = new List<GameObject>();
+            if (script.ReactionTask == null) script.ReactionTask = new List<string>();
             int index = script.ReactionIngredients.Count - 1;
             script.ReactionIngredients.RemoveAt(index);
             script.ReactionResults.RemoveAt(index);
