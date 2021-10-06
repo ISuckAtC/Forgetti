@@ -16,7 +16,7 @@ public class BasicController : MonoBehaviour
     public float MaxDistance = 5;
     public float DistanceSensitivity = 1;
     public float HoldVelocityMultiplier;
-    private GameObject heldObject;
+    public GameObject HeldObject;
     static public GameObject Player;
 
     void Awake()
@@ -49,11 +49,11 @@ public class BasicController : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1))
         {
-            if (heldObject != null)
+            if (HeldObject != null)
             {
-                heldObject.GetComponent<Rigidbody>().useGravity = true;
-                Destroy(heldObject.GetComponent<Pickup>());
-                heldObject = null;
+                HeldObject.GetComponent<Rigidbody>().useGravity = true;
+                Destroy(HeldObject.GetComponent<Pickup>());
+                HeldObject = null;
             }
             else
             {
@@ -67,15 +67,15 @@ public class BasicController : MonoBehaviour
                         Transform pickup = rayhit.transform;
                         pickup.gameObject.GetComponent<Rigidbody>().useGravity = false;
                         pickup.gameObject.AddComponent<Pickup>().Initialize(PlayerCamera, HoldDistance, HoldVelocityMultiplier);
-                        heldObject = pickup.gameObject;
+                        HeldObject = pickup.gameObject;
                     }
                 }
             }
         }
 
-        if (Input.mouseScrollDelta.y != 0 && heldObject != null)
+        if (Input.mouseScrollDelta.y != 0 && HeldObject != null)
         {
-            Pickup pickup = heldObject.GetComponent<Pickup>();
+            Pickup pickup = HeldObject.GetComponent<Pickup>();
             float newDistance = Mathf.Clamp(pickup.Distance + (Input.mouseScrollDelta.y * DistanceSensitivity), MinDistance, MaxDistance);
             pickup.Distance = newDistance;
         }
