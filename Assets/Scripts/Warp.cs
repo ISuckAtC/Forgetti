@@ -9,12 +9,17 @@ public class Warp : MonoBehaviour
     public float MinAngleDelta;
     public Color[] ColorCycle;
     private bool cycled;
-    private int cycleIndex;
-    private MeshRenderer mr;
+    protected int cycleIndex;
+    protected MeshRenderer mr;
     void Start()
     {
         if (Player == null) Player = GameObject.Find("KevsPlayer").transform;
         mr = GetComponent<MeshRenderer>();
+    }
+
+    public virtual void FireWarp(ref bool _cycled)
+    {
+        mr.material.color = ColorCycle[cycleIndex++];
     }
 
     void FixedUpdate()
@@ -28,8 +33,7 @@ public class Warp : MonoBehaviour
             {
                 if (!cycled)
                 {
-                    cycled = true;
-                    mr.material.color = ColorCycle[cycleIndex++];
+                    FireWarp(ref cycled);
                     if (cycleIndex == ColorCycle.Length) cycleIndex = 0;
                 }
             }
