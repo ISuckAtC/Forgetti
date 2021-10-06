@@ -15,6 +15,7 @@ public class Pickup : MonoBehaviour
         Distance = _distance;
         velocityMultiplier = _velocityMultiplier;
         rb = GetComponent<Rigidbody>();
+        Debug.Log("Picked up " + name);
     }
 
     void FixedUpdate()
