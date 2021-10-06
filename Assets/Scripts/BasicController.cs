@@ -62,9 +62,9 @@ public class BasicController : MonoBehaviour
                 {
                     Debug.Log("Pickup ray hit " + rayhit.transform.name);
 
-                    if (rayhit.transform.tag == "Pickup")
+                    if (rayhit.rigidbody && rayhit.rigidbody.transform.tag == "Pickup")
                     {
-                        Transform pickup = rayhit.transform;
+                        Transform pickup = rayhit.rigidbody.transform;
                         pickup.gameObject.GetComponent<Rigidbody>().useGravity = false;
                         pickup.gameObject.AddComponent<Pickup>().Initialize(PlayerCamera, HoldDistance, HoldVelocityMultiplier);
                         HeldObject = pickup.gameObject;
