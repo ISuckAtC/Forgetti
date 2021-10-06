@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3797748257845482016
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545416, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545417, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: m_Name
+      value: Daughter 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: DialogueText
+      value: Ohhhh thanks dad! It's another drawing isn't it *laughs*
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: ChainDialogue
+      value: 
+      objectReference: {fileID: 4537442442340113798, guid: d558fb3d39b4b9b43875255a205df6ac, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
