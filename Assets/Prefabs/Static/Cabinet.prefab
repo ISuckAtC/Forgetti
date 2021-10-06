@@ -86,6 +86,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Cabinet(UV\xB4s)"
       objectReference: {fileID: 0}
+    - target: {fileID: 8424073627695423409, guid: 135e39d28644a854f86be3f90834d6f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d40469358572e84eb895b05b8fad007, type: 2}
+    - target: {fileID: 8835409689826365435, guid: 135e39d28644a854f86be3f90834d6f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 603c93cb2fd9eec4d8ba814516f8190c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 135e39d28644a854f86be3f90834d6f1, type: 3}
 --- !u!4 &1053092862312269054 stripped
