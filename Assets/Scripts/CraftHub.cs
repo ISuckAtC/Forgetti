@@ -12,7 +12,7 @@ public class CraftHub : CraftingIngredient
         Transform parent = null;
         bool held = false;
 
-        if (BasicController.Player.GetComponent<BasicController>().HeldObject)
+        if (BasicController.Player.GetComponent<BasicController>().HeldObject == c.gameObject)
         {
             held = true;
             GameObject obj = BasicController.Player.GetComponent<BasicController>().HeldObject;
