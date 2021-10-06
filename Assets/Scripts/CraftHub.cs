@@ -32,6 +32,8 @@ public class CraftHub : CraftingIngredient
         
         g.GetComponent<Rigidbody>().velocity += new Vector3(0, ReactionForce, 0);
 
+        if (held) BasicController.Player.GetComponent<BasicController>().HeldObject = g;
+
         ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
 
         Destroy(c.gameObject);
