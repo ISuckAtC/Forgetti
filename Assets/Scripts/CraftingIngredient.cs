@@ -34,7 +34,7 @@ public class CraftingIngredient : MonoBehaviour
         GameObject g = Instantiate(prefab, position, rotation);
         g.GetComponent<Rigidbody>().velocity += new Vector3(0, ReactionForce, 0);
 
-        ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
+        //ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
 
         Destroy(c.gameObject);
         Destroy(gameObject);
