@@ -57,8 +57,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
-      value: "Okay\u2026 oh, wait a minute! I forgot to give you something, I\xB4ll
-        go get it. Just wait here and finish your tea."
+      value: "Father: Okay\u2026 oh, wait a minute! I forgot to give you something,
+        I\xB4ll go get it. Just wait here and finish your tea."
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: ChainDialogue

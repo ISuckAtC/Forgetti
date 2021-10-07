@@ -53,11 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545417, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: m_Name
-      value: DialoguePrimitive
+      value: Daugther 3
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
-      value: Me too dad, goodbye!!
+      value: 'Daughter: Me too dad, goodbye!!'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}

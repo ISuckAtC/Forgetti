@@ -57,8 +57,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
-      value: "Yeah\u2026 I guess.\t\r\nWell Dad, I've got to get going, I don\xB4t
-        want to miss my flight."
+      value: "Daughter: Yeah\u2026 I guess.\t\r\nWell Dad, I've got to get going,
+        I don\xB4t want to miss my flight."
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: ChainDialogue
