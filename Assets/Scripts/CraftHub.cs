@@ -48,7 +48,9 @@ public class CraftHub : CraftingIngredient
         }
 
         //ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
+        Debug.Log("DESTROY");
         Debug.Log("Destroying " + other.name);
         Destroy(other.gameObject);
+        Debug.Log("DESTROYED");
     }
 }
