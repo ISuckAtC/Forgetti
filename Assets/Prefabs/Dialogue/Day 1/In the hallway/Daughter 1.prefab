@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
-      value: Ohhhh thanks dad! It's another drawing isn't it *laughs*
+      value: 'Daughter: Ohhhh thanks dad! It''s another drawing isn''t it *laughs*'
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: ChainDialogue

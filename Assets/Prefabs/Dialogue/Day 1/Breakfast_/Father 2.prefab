@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
-      value: "I know sweetheart, you\xB4re just like your mother\u2026"
+      value: "Father: I know sweetheart, you\xB4re just like your mother\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: ChainDialogue
