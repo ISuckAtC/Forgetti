@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - Pickup
+  - Board
   layers:
   - Default
   - TransparentFX

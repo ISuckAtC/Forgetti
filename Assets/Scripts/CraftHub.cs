@@ -29,18 +29,25 @@ public class CraftHub : CraftingIngredient
         yield return new WaitForSeconds(delay);
         GameObject g = null;
         if (prefab) g = Instantiate(prefab, position, rotation);
-        if (held && g) g.transform.parent = parent;
+        if (g) g.transform.parent = transform;
         
-        if (g) g.GetComponent<Rigidbody>().velocity += new Vector3(0, ReactionForce, 0);
+        if (g) 
+        {
+            Rigidbody body;
+            if (g.TryGetComponent<Rigidbody>(out body))
+            {
+                body.velocity += new Vector3(0, ReactionForce, 0);
+            }
+        }
 
         if (held) 
         {
-            if (g) BasicController.Player.GetComponent<BasicController>().HeldObject = g;
-            else BasicController.Player.GetComponent<BasicController>().HeldObject = null;
+            //if (g) BasicController.Player.GetComponent<BasicController>().HeldObject = g;
+            BasicController.Player.GetComponent<BasicController>().HeldObject = null;
         }
 
         //ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
-        
+
         Destroy(c.gameObject);
     }
 }
