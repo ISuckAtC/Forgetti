@@ -70,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 6022852026823490923, guid: 4e7b08262e6c7824da06c6765daab6d5, type: 3}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: CloseUpDistance
-      value: 3
+      value: 2.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
