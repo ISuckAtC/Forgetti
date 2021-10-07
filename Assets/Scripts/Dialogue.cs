@@ -16,7 +16,7 @@ public class Dialogue : MonoBehaviour
     public string DialogueText;
     public int PreDelay;
     public int CharacterDelay;
-    public GameObject ChainDialogue;
+    public GameObject[] Chain;
     private int currentDelay;
     private int index = -1;
     private char[] dialogueArray;
@@ -64,11 +64,16 @@ public class Dialogue : MonoBehaviour
             if (index == dialogueArray.Length)
             {
                 writing = false;
-                if (ChainDialogue) 
+                for (int i = 0; i < Chain.Length; ++i) 
                 {
-                    GameObject chainDialogue = Instantiate(ChainDialogue, transform.position, transform.rotation);
+                    
+                    GameObject chainDialogue = Instantiate(Chain[i], transform.position, transform.rotation);
                     chainDialogue.transform.parent = board;
-                    chainDialogue.GetComponent<Dialogue>().Chained = true;
+                    Dialogue dialogue;
+                    if (chainDialogue.TryGetComponent<Dialogue>(out dialogue))
+                    {
+                        dialogue.Chained = true;
+                    }
                 }
             }
         }
