@@ -38,7 +38,8 @@ public class CraftingIngredient : MonoBehaviour
 
         //ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
 
-        Destroy(c.gameObject);
+        Debug.Log("Destroying " + other.name);
+        Destroy(other.gameObject);
         Destroy(gameObject);
     }
 
