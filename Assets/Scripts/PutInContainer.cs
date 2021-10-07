@@ -11,16 +11,21 @@ public class PutInContainer : MonoBehaviour
     private void OnTriggerEnter(Collider col)
     {
 
-        Debug.Log("hit " + col.gameObject.name);
+        Debug.Log("hit " + col.gameObject.transform.parent.name);
 
         for(int i = 0; i < ObjectsToStore.Length; i++)
         {
 
-            if(ObjectsToStore[i] == col.gameObject.transform.parent)
+            if(ObjectsToStore[i] != null)
             {
 
-                itemsStored++;
-                Destroy(col.gameObject.transform.parent);
+                if(ObjectsToStore[i].name == col.gameObject.transform.parent.name)
+                {
+
+                    itemsStored++;
+                    Destroy(col.gameObject.transform.parent.gameObject);
+
+                }
 
             }
 
@@ -29,7 +34,7 @@ public class PutInContainer : MonoBehaviour
         if(itemsStored >= ObjectsToStore.Length)
         {
 
-            GameObject.FindGameObjectWithTag("Player").transform.position += Vector3.up;
+            GameObject.FindGameObjectWithTag("Player").transform.position += Vector3.up * 10;
 
         }
 
