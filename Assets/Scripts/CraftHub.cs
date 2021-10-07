@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class CraftHub : CraftingIngredient
 {
-    public override IEnumerator Craft(Collision c, float delay = 0)
+    public override IEnumerator Craft(Collision c, Transform other, float delay = 0)
     {
-        GameObject prefab = Reactions[c.transform.name].reaction;
+        Debug.Log("Starting craft with " + other.name);
+        GameObject prefab = Reactions[other.name].reaction;
         Vector3 position;
         Quaternion rotation;
         Transform parent = null;
         bool held = false;
 
-        if (BasicController.Player.GetComponent<BasicController>().HeldObject == c.gameObject)
+        if (BasicController.Player.GetComponent<BasicController>().HeldObject == other.gameObject)
         {
             held = true;
             GameObject obj = BasicController.Player.GetComponent<BasicController>().HeldObject;
@@ -47,7 +48,7 @@ public class CraftHub : CraftingIngredient
         }
 
         //ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
-        Debug.Log("Destroying " + c.gameObject.name);
-        Destroy(c.gameObject);
+        Debug.Log("Destroying " + other.name);
+        Destroy(other.gameObject);
     }
 }

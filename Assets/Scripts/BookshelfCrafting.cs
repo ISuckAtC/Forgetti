@@ -7,7 +7,7 @@ public class BookshelfCrafting : CraftingIngredient
 {
     public static int BookPosition;
 
-    public override IEnumerator Craft(Collision c, float delay = 0)
+    public override IEnumerator Craft(Collision c, Transform other, float delay = 0)
     {
         yield return new WaitForSeconds(delay);
         BasicController.Player.transform.Translate(new Vector3(0, 10, 0), Space.World);

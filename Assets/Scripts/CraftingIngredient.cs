@@ -23,7 +23,7 @@ public class CraftingIngredient : MonoBehaviour
         }
     }
 
-    public virtual IEnumerator Craft(Collision c, float delay = 0)
+    public virtual IEnumerator Craft(Collision c, Transform other, float delay = 0)
     {
         GameObject prefab = Reactions[c.transform.name].reaction;
         Vector3 position = c.contacts[0].point;
@@ -42,14 +42,15 @@ public class CraftingIngredient : MonoBehaviour
 
     public void OnCollisionEnter(Collision c)
     {
-        Debug.Log(name + " hit " + c.transform.name);
-        if (Reactions.ContainsKey(c.transform.name))
+        Transform other = c.transform;
+        Debug.Log(name + " hit " + other.name);
+        if (Reactions.ContainsKey(other.name))
         {
-            Debug.Log("Crafting with " + c.transform.name);
-            Destroy(c.transform.gameObject.GetComponent<Rigidbody>());
-            Destroy(c.transform.gameObject.GetComponent<Collider>());
-            c.transform.parent = transform;
-            StartCoroutine(Craft(c, CraftingDelay));
+            Debug.Log("Crafting with " + other.name);
+            Destroy(other.gameObject.GetComponent<Rigidbody>());
+            Destroy(other.gameObject.GetComponent<Collider>());
+            other.parent = transform;
+            StartCoroutine(Craft(c, other, CraftingDelay));
         }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CraftAndTP : CraftingIngredient
 {
-    public override IEnumerator Craft(Collision c, float delay = 0)
+    public override IEnumerator Craft(Collision c, Transform other, float delay = 0)
     {
         GameObject prefab = Reactions[c.transform.name].reaction;
         Vector3 position = c.contacts[0].point;
