@@ -34,7 +34,7 @@ public class CraftHub : CraftingIngredient
 
         if (held) BasicController.Player.GetComponent<BasicController>().HeldObject = g;
 
-        ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
+        //ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[c.transform.name].task);
 
         Destroy(c.gameObject);
         BasicController.Player.transform.Translate(new Vector3(0, 10, 0), Space.World);

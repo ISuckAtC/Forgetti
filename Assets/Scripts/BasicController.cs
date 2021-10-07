@@ -43,7 +43,7 @@ public class BasicController : MonoBehaviour
             RaycastHit rayhit;
             if (Physics.Raycast(PlayerCamera.position, PlayerCamera.forward, out rayhit, InteractRange))
             {
-                Debug.Log("Interaction ray hit " + rayhit.transform.name);
+                if (Input.GetKey(KeyCode.LeftShift)) Debug.Log("Interaction ray hit " + rayhit.transform.name);
                 if (rayhit.transform.tag == "Door") rayhit.transform.GetComponent<IInteractable>().Interact();
             }
         }
@@ -60,7 +60,7 @@ public class BasicController : MonoBehaviour
                 RaycastHit rayhit;
                 if (Physics.Raycast(PlayerCamera.position, PlayerCamera.forward, out rayhit, PickupRange))
                 {
-                    Debug.Log("Pickup ray hit " + rayhit.transform.name);
+                    if (Input.GetKey(KeyCode.LeftShift)) Debug.Log("Pickup ray hit " + rayhit.transform.name);
 
                     if (rayhit.rigidbody && rayhit.rigidbody.transform.tag == "Pickup")
                     {
