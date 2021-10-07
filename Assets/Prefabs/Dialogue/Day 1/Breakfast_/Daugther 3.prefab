@@ -56,6 +56,10 @@ PrefabInstance:
       value: Daugther 3
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: PreDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
       value: "Daughter: Yeah\u2026 I guess.\t\r\nWell Dad, I've got to get going,
         I don\xB4t want to miss my flight."
@@ -64,5 +68,9 @@ PrefabInstance:
       propertyPath: ChainDialogue
       value: 
       objectReference: {fileID: 7114451504334060307, guid: b28bddfe71ad4af449bdd8792c3937dc, type: 3}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: CloseUpDistance
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}

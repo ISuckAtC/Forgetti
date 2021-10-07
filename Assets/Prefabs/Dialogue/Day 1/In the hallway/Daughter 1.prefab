@@ -56,6 +56,10 @@ PrefabInstance:
       value: Daughter 1
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: PreDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
       value: 'Daughter: Ohhhh thanks dad! It''s another drawing isn''t it *laughs*'
       objectReference: {fileID: 0}
@@ -63,5 +67,9 @@ PrefabInstance:
       propertyPath: ChainDialogue
       value: 
       objectReference: {fileID: 4537442442340113798, guid: d558fb3d39b4b9b43875255a205df6ac, type: 3}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: CloseUpDistance
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}

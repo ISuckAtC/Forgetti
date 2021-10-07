@@ -56,6 +56,10 @@ PrefabInstance:
       value: Father 3
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: PreDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
       value: "Father: Okay\u2026 oh, wait a minute! I forgot to give you something,
         I\xB4ll go get it. Just wait here and finish your tea."
@@ -63,6 +67,10 @@ PrefabInstance:
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: ChainDialogue
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: CloseUpDistance
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}

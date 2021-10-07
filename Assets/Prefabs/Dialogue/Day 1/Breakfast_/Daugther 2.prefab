@@ -56,6 +56,10 @@ PrefabInstance:
       value: Daugther 2
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: PreDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
       value: "Daughter: I have really enjoyed my visit here. I wish I was able to
         come here more often, but you know, I'm very busy working in the city and
@@ -65,5 +69,9 @@ PrefabInstance:
       propertyPath: ChainDialogue
       value: 
       objectReference: {fileID: 1504332195771115704, guid: c2eb048030bfea9419b4d99bf1a893e6, type: 3}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: CloseUpDistance
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
