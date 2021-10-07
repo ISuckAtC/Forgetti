@@ -2193,7 +2193,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Pickup
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4288092748733630393, guid: bf0c78925c7c95d47b2baeacbd6b06ed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bf0c78925c7c95d47b2baeacbd6b06ed, type: 3}
 --- !u!4 &3215600357443448554 stripped
 Transform:
