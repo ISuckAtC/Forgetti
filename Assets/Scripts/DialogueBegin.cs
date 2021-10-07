@@ -17,6 +17,7 @@ public class DialogueBegin : MonoBehaviour
     {
         GameObject o = Instantiate(FirstDialogue, Vector3.zero, Quaternion.identity);
         o.transform.parent = Board.transform;
+        Board.transform.localScale = new Vector3(2f,0.5f,0.00999999978f);
         Destroy(gameObject);
     }
 
