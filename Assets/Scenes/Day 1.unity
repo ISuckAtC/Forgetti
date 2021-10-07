@@ -1115,7 +1115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2466429690084112976, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.93
+      value: 5.64
       objectReference: {fileID: 0}
     - target: {fileID: 2466429690084112976, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1369,6 +1369,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1479557730700737668, guid: 5ae5b611add23a6438a242c36debc69a, type: 3}
   m_PrefabInstance: {fileID: 1298315865}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1307784483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1071054873934336607, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+  m_PrefabInstance: {fileID: 1071054874763339114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1307784484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307784483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2e537ed5ead944a9845f124cac8388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactionIngredients:
+  - Mug with Teabag(Clone)
+  ReactionResults:
+  - {fileID: 1306595628958306637, guid: a550b067c43d0354d9080221dc19b6a7, type: 3}
+  ReactionTask:
+  - Give Teaa
+  test: []
+  ReactionForce: 0
+  CraftingDelay: 0
 --- !u!4 &1324791606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
