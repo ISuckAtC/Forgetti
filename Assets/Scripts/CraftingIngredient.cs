@@ -13,9 +13,11 @@ public class CraftingIngredient : MonoBehaviour
     public List<string> test;
     public float ReactionForce;
     public float CraftingDelay;
+    private List<GameObject> hitObjects;
 
     public void Start()
     {
+        hitObjects = new List<GameObject>();
         Reactions = new Dictionary<string, (GameObject reaction, string task)>();
         for (int i = 0; i < ReactionIngredients.Count; ++i)
         {
@@ -44,11 +46,12 @@ public class CraftingIngredient : MonoBehaviour
     {
         Transform other = c.transform;
         Debug.Log(name + " hit " + other.name);
+        if (hitObjects.Contains(c.gameObject)) return;
         if (Reactions.ContainsKey(other.name))
         {
+            hitObjects.Add(c.gameObject);
             Debug.Log("Crafting with " + other.name);
             Destroy(other.gameObject.GetComponent<Rigidbody>());
-            Destroy(other.gameObject.GetComponent<Collider>());
             other.parent = transform;
             StartCoroutine(Craft(c, other, CraftingDelay));
         }
