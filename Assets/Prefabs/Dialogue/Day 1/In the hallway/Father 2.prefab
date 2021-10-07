@@ -60,6 +60,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: ViewRange
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
       propertyPath: DialogueText
       value: "Father: I guess I'm getting predictable\u2026 I can get you something
         else if you don't \r\nlike it\u2026\r\n"
