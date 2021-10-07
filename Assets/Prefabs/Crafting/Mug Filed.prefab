@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &3701512513668511083
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978861031307968013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7219886339314900476, guid: dc293a5c5f877514ead9add2eed4439a, type: 3}
 --- !u!1 &5440326396890001678
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,9 +23,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762511901665516581}
+  - component: {fileID: 4944659837320472686}
+  - component: {fileID: -3882361701116470471}
   m_Layer: 0
   m_Name: Mug Filed
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,6 +47,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &4944659837320472686
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5440326396890001678}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-3882361701116470471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5440326396890001678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa369b1ad4d5e6a429cef7b184ee70f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactionIngredients:
+  - Teabag
+  ReactionResults:
+  - {fileID: 5440326396890001678, guid: 8453b0624f7012247a7bb66671e9b8ff, type: 3}
+  ReactionTask:
+  - Make Tea
+  test: []
+  ReactionForce: 0
+  CraftingDelay: 0
 --- !u!1001 &95971121867277148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92,6 +145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc293a5c5f877514ead9add2eed4439a, type: 3}
+--- !u!1 &978861031307968013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dc293a5c5f877514ead9add2eed4439a, type: 3}
+  m_PrefabInstance: {fileID: 95971121867277148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &494916878714873015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc293a5c5f877514ead9add2eed4439a, type: 3}

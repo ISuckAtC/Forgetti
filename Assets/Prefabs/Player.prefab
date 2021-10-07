@@ -157,7 +157,8 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 5
   DistanceSensitivity: 1
-  HoldVelocityMultiplier: 0
+  HoldVelocityMultiplier: 2
+  HeldObject: {fileID: 0}
 --- !u!1 &2466429690840199500
 GameObject:
   m_ObjectHideFlags: 0
