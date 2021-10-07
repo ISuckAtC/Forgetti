@@ -45,6 +45,7 @@ public class CraftingIngredient : MonoBehaviour
         Debug.Log(name + " hit " + c.transform.name);
         if (Reactions.ContainsKey(c.transform.name))
         {
+            Debug.Log("Crafting with " + c.transform.name);
             Destroy(c.transform.gameObject.GetComponent<Rigidbody>());
             c.transform.parent = transform;
             StartCoroutine(Craft(c, CraftingDelay));
