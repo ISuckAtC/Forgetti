@@ -47,6 +47,7 @@ public class CraftingIngredient : MonoBehaviour
         {
             Debug.Log("Crafting with " + c.transform.name);
             Destroy(c.transform.gameObject.GetComponent<Rigidbody>());
+            Destroy(c.transform.gameObject.GetComponent<Collider>());
             c.transform.parent = transform;
             StartCoroutine(Craft(c, CraftingDelay));
         }
