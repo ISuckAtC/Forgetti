@@ -8,20 +8,16 @@ public class JournalController : MonoBehaviour
 
     public Color FinishedTaskColour;
     public GameObject[] TaskTexts;
-    public TextMeshPro texto;
 
     private void start()
     {
-
-        texto.color = FinishedTaskColour;
 
     }
 
     private void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.J))
-            texto.color = FinishedTaskColour;
+        
 
     }
 
@@ -31,7 +27,7 @@ public class JournalController : MonoBehaviour
         if(taskStatus)
         {
 
-            TaskTexts[taskIndex].GetComponent<TextMesh>().color = FinishedTaskColour;
+            TaskTexts[taskIndex].GetComponent<TextMeshPro>().color = FinishedTaskColour;
 
         }
 
