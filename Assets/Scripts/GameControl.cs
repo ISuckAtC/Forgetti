@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameControl : MonoBehaviour
 {
     public static GameControl Self;
-    public List<Transform>[] AnchorsPerFloor;
-    public List<IConfusionItem>[] ConfusionItemsPerFloor;
+    public List<SerializableList<Transform>> AnchorsPerFloor;
+    public List<SerializableList<AnchorWarp>> ConfusionItemsPerFloor;
     public static int CurrentFloor;
     public float ConfusionRate;
 
@@ -22,18 +22,14 @@ public class GameControl : MonoBehaviour
 
     public void Confusion()
     {
-        List<IConfusionItem> floorItems = ConfusionItemsPerFloor[CurrentFloor];
+        List<AnchorWarp> floorItems = ConfusionItemsPerFloor[CurrentFloor];
         List<int> checkedIndices = new List<int>();
         int eligible = 0;
         for (int i = 0; i < floorItems.Count; ++i)
         {
             eligible = Random.Range(0, floorItems.Count);
             checkedIndices.Add(eligible);
-            bool isAnchorWarp = floorItems[eligible].GetType() == typeof(AnchorWarp);
-            if (CheckConfusionEligible(
-                floorItems[eligible].self,
-                isAnchorWarp ? ((AnchorWarp)floorItems[eligible]).MinAngleDelta : 1.4f,
-                isAnchorWarp ? ((AnchorWarp)floorItems[eligible]).MinDistance : 10f))
+            if (CheckConfusionEligible(floorItems[eligible].self, floorItems[eligible].MinAngleDelta, floorItems[eligible].MinDistance))
             {
                 floorItems[eligible].Confuse();
                 return;
