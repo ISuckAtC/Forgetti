@@ -15,7 +15,7 @@ public class CraftAndTP : CraftingIngredient
         GameObject g = Instantiate(prefab, position, rotation);
         g.GetComponent<Rigidbody>().velocity += new Vector3(0, ReactionForce, 0);
 
-        ClipBoardController.ClipBoardCtrl.UpdateJournal(Reactions[other.name].task);
+        TaskManager.main.UpdateTasks(Reactions[other.name].task);
 
         Destroy(other.gameObject);
         Destroy(gameObject);
