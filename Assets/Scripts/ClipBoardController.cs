@@ -7,10 +7,7 @@ public class ClipBoardController : MonoBehaviour
 {
     
     public static ClipBoardController ClipBoardCtrl;
-    public Color FinishedTaskColour;
-    public Dictionary<string, GameObject> TaskTextDir;
-    public GameObject[] TaskTexts;
-    public GameObject ClipBoardObj, TempMenu, TempJournal;
+    public GameObject ClipBoardObj, TempMenu, TempSettings;
     public PlayerMovementController PlayerMovemenet;
     public CameraController CamController;
     private bool menuActive;
@@ -22,16 +19,6 @@ public class ClipBoardController : MonoBehaviour
         playerMask = ~(LayerMask.NameToLayer("Player") << 1);
         menuActive = false;
         ClipBoardCtrl = this;
-
-        TaskTextDir = new Dictionary<string, GameObject>();
-
-        foreach (GameObject go in TaskTexts)
-        {
-
-            TaskTextDir.Add(go.name, go);
-            Debug.Log("Added: " + go.name);
-            
-        }
         
     }
 
@@ -60,8 +47,8 @@ public class ClipBoardController : MonoBehaviour
                     UpdateClipBoard();
                     break;
 
-                    case "Journal":
-                    OpenJournal();
+                    case "Settings":
+                    OpenSettings();
                     break;
 
                     case "Menu":
@@ -104,11 +91,11 @@ public class ClipBoardController : MonoBehaviour
 
     }
 
-    public void OpenJournal()
+    public void OpenSettings()
     {
 
         TempMenu.SetActive(false);
-        TempJournal.SetActive(true);
+        TempSettings.SetActive(true);
 
     }
 
@@ -116,20 +103,7 @@ public class ClipBoardController : MonoBehaviour
     {
 
         TempMenu.SetActive(true);
-        TempJournal.SetActive(false);
-
-    }
-
-    public void UpdateJournal(string TaskName)
-    {
-
-        if(TaskTextDir.ContainsKey(TaskName))
-        {
-
-            TaskTextDir.TryGetValue(TaskName, out GameObject tempGO);
-            tempGO.GetComponent<TextMesh>().color = FinishedTaskColour;
-
-        }
+        TempSettings.SetActive(false);
 
     }
 
