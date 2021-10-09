@@ -207,6 +207,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 35.17
       objectReference: {fileID: 0}
+    - target: {fileID: 5965213979313951242, guid: 9486825d796071e418c1dacefb874c73, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5965213979367371920, guid: 9486825d796071e418c1dacefb874c73, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.5689764
+      objectReference: {fileID: 0}
+    - target: {fileID: 5965213979367371920, guid: 9486825d796071e418c1dacefb874c73, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.514
+      objectReference: {fileID: 0}
     - target: {fileID: 5965213979643354344, guid: 9486825d796071e418c1dacefb874c73, type: 3}
       propertyPath: m_Name
       value: HouseLayoutNew (1)
@@ -747,7 +759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5965213979313951242, guid: 9486825d796071e418c1dacefb874c73, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5965213979643354344, guid: 9486825d796071e418c1dacefb874c73, type: 3}
       propertyPath: m_Name
