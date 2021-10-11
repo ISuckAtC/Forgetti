@@ -24,6 +24,7 @@ public class Dialogue : MonoBehaviour
     [HideInInspector] public bool Chained;
     public bool UseSkip;
     private bool skip;
+    private bool noChain;
 
     void Start()
     {
@@ -45,11 +46,11 @@ public class Dialogue : MonoBehaviour
     {
         if (UseSkip)
         {
-            if (skip) 
+            if (skip)
             {
                 Next();
             }
-            else 
+            else
             {
                 textMesh.text = "";
                 for (int i = 0; i < dialogueArray.Length; ++i)
@@ -66,15 +67,21 @@ public class Dialogue : MonoBehaviour
         writing = false;
         for (int i = 0; i < Chain.Length; ++i)
         {
-            GameObject chainDialogue = Instantiate(Chain[i], transform.position, transform.rotation);
-            chainDialogue.transform.parent = board;
-            Dialogue dialogue;
-            if (chainDialogue.TryGetComponent<Dialogue>(out dialogue))
+            if (Chain[i])
             {
-                dialogue.Chained = true;
+                
+                GameObject chainDialogue = Instantiate(Chain[i], transform.position, transform.rotation);
+                chainDialogue.transform.parent = board;
+                Dialogue dialogue;
+                if (chainDialogue.TryGetComponent<Dialogue>(out dialogue))
+                {
+                    dialogue.Chained = true;
+                }
             }
-            Destroy(this);
+            else noChain = true;
         }
+        if (noChain) Destroy(gameObject.transform.parent.gameObject);
+        else Destroy(gameObject);
     }
 
     void FixedUpdate()
@@ -94,7 +101,7 @@ public class Dialogue : MonoBehaviour
         {
             if (index == dialogueArray.Length)
             {
-                if (UseSkip) 
+                if (UseSkip)
                 {
                     skip = true;
                     return;
