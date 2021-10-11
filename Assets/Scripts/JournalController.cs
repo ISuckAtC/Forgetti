@@ -11,18 +11,6 @@ public class JournalController : MonoBehaviour
     public Color FinishedTaskColour;
     public GameObject[] TaskTexts;
 
-    private void start()
-    {
-
-    }
-
-    private void Update()
-    {
-
-        
-
-    }
-
     public void UpdateJournal(bool taskStatus, int taskIndex)
     {
 
@@ -34,5 +22,9 @@ public class JournalController : MonoBehaviour
         }
 
     }
+
+    public void UnlockTask(int taskIndex) => TaskTexts[taskIndex].SetActive(true);
+
+    public void LockTask(int taskIndex) => TaskTexts[taskIndex].SetActive(false);
 
 }

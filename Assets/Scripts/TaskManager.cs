@@ -32,13 +32,55 @@ public class TaskManager : MonoBehaviour
 
     }
 
-    public void UpdateTasks(string TaskName)
+    public void UpdateTasks(string taskName)
     {
 
         //Debug.Log("Using key: " + TaskName);
-        TaskStatus[TaskDictionary[TaskName].TaskStatusIndex] = true;
+        if(TaskDictionary.ContainsKey(taskName))
+        {
 
-        journal.UpdateJournal(TaskStatus[TaskDictionary[TaskName].TaskStatusIndex], TaskDictionary[TaskName].TaskStatusIndex);
+            TaskStatus[TaskDictionary[taskName].TaskStatusIndex] = true;
+            journal.UpdateJournal(TaskStatus[TaskDictionary[taskName].TaskStatusIndex], TaskDictionary[taskName].TaskStatusIndex);
+
+        }
+
+    }
+
+    public void UndoTask(string taskName)
+    {
+
+        //Debug.Log("Using key: " + TaskName);
+        if(TaskDictionary.ContainsKey(taskName))
+        {
+
+            TaskStatus[TaskDictionary[taskName].TaskStatusIndex] = false;
+            journal.UpdateJournal(TaskStatus[TaskDictionary[taskName].TaskStatusIndex], TaskDictionary[taskName].TaskStatusIndex);
+
+        }
+
+    }
+
+    public void UnlockTask(string taskName)
+    {
+
+        if(TaskDictionary.ContainsKey(taskName))
+        {
+
+            journal.UnlockTask(TaskDictionary[taskName].TaskStatusIndex);
+
+        }
+
+    }
+
+    public void LockTask(string taskName)
+    {
+
+        if(TaskDictionary.ContainsKey(taskName))
+        {
+
+            journal.LockTask(TaskDictionary[taskName].TaskStatusIndex);
+
+        }
 
     }
 
