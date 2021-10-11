@@ -18,7 +18,7 @@ public class Door : MonoBehaviour, IInteractable
     void Start()
     {
         startRotation = transform.rotation.eulerAngles.y;
-        pivotPoint = transform.position + (transform.forward * PivotDistance);
+        pivotPoint = transform.position + (-transform.right * PivotDistance);
         Links = SetLinks;
     }
 
@@ -49,7 +49,7 @@ public class Door : MonoBehaviour, IInteractable
         if (!open)
         {
             Vector2 difference = new Vector2(BasicController.Player.transform.position.x - transform.position.x, BasicController.Player.transform.position.z - transform.position.z);
-            Vector2 direction = new Vector2(transform.right.x, transform.right.z);
+            Vector2 direction = new Vector2(transform.forward.x, transform.forward.z);
             difference = difference.normalized;
             direction = direction.normalized;
             float vectorDistance = Vector2.Distance(difference, direction);
@@ -57,8 +57,8 @@ public class Door : MonoBehaviour, IInteractable
             Debug.Log(difference + " | " + direction + " | " + vectorDistance);
             if (vectorDistance > 1.618033988f) // Golden Ratio
             {
-
-            }
+                reverse = true;
+            } else reverse = false;
         }
         open = !open;
         if (!chain)
