@@ -97,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7255234786465487381, guid: cc90a4b7aac027740a12e650a6edd237, type: 3}
       propertyPath: m_Name
-      value: 1 Make Tea for Daughter
+      value: 1 Make Tea
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc90a4b7aac027740a12e650a6edd237, type: 3}
