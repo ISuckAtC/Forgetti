@@ -27,7 +27,7 @@ public class CraftingIngredient : MonoBehaviour
 
     public virtual IEnumerator Craft(Collision c, Transform other, float delay = 0)
     {
-        GameObject prefab = Reactions[c.transform.name].reaction;
+        GameObject prefab = Reactions[other.name].reaction;
         Vector3 position = c.contacts[0].point;
         Quaternion rotation = Quaternion.Euler(c.contacts[0].normal);
 
@@ -36,7 +36,7 @@ public class CraftingIngredient : MonoBehaviour
         GameObject g = Instantiate(prefab, position, rotation);
         g.GetComponent<Rigidbody>().velocity += new Vector3(0, ReactionForce, 0);
 
-        TaskManager.main.UpdateTasks(Reactions[c.transform.name].task);
+        TaskManager.main.UpdateTasks(Reactions[other.name].task);
 
         Debug.Log("Destroying " + other.name);
         Destroy(other.gameObject);

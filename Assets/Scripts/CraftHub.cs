@@ -47,7 +47,7 @@ public class CraftHub : CraftingIngredient
             BasicController.Player.GetComponent<BasicController>().HeldObject = null;
         }
 
-        TaskManager.main.UpdateTasks(Reactions[c.transform.name].task);
+        TaskManager.main.UpdateTasks(Reactions[other.name].task);
         Debug.Log("Destroying " + other.name);
         Destroy(other.gameObject);
     }

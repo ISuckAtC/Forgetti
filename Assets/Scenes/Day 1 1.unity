@@ -1918,6 +1918,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 762511901665516581, guid: a25b48a1bf227a0499f94a3e9a1243fb, type: 3}
   m_PrefabInstance: {fileID: 1696654401}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1744844339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744844341}
+  - component: {fileID: 1744844340}
+  m_Layer: 0
+  m_Name: GameControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1744844340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744844339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5153564f8b5544abeca80f7cf9307d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnchorsPerFloor:
+  - innerList:
+    - {fileID: 0}
+  - innerList: []
+  - innerList: []
+  ConfusionItemsPerFloor:
+  - innerList:
+    - {fileID: 0}
+  - innerList: []
+  ConfusionRate: 0
+--- !u!4 &1744844341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744844339}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1750896310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3443447406991497821, guid: 9486825d796071e418c1dacefb874c73, type: 3}
