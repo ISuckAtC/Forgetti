@@ -6,6 +6,8 @@ using TMPro;
 public class JournalController : MonoBehaviour
 {
 
+    [TextArea]
+    public string HowToUse;
     public Color FinishedTaskColour;
     public GameObject[] TaskTexts;
 
