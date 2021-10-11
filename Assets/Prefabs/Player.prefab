@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2466429690084112988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.48, y: 3, z: -37.04}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 2, y: 1.79302, z: 2}
   m_Children:
   - {fileID: 2466429690840199503}
   - {fileID: 2017911979}
@@ -159,6 +159,7 @@ MonoBehaviour:
   DistanceSensitivity: 1
   HoldVelocityMultiplier: 2
   HeldObject: {fileID: 0}
+  HeldAngularDrag: 0
 --- !u!1 &2466429690840199500
 GameObject:
   m_ObjectHideFlags: 0
