@@ -46,7 +46,7 @@ public class GameControl : MonoBehaviour
             Vector3 vAngleDelta = BasicController.Player.transform.forward - angleToPlayer;
             if (vAngleDelta.magnitude > minAngleDelta || vAngleDelta.magnitude < -minAngleDelta)
             {
-                return true;
+                if (obj.GetComponent<ObjectAnchor>().StoredObject == null) return true;
             }
         }
         return false;
@@ -61,7 +61,10 @@ public class GameControl : MonoBehaviour
         List<Transform> eligibleAnchors = new List<Transform>();
         for (int i = 0; i < Self.AnchorsPerFloor[CurrentFloor].Count; ++i)
         {
-            if (CheckConfusionEligible(Self.AnchorsPerFloor[CurrentFloor][i], 1.4f, 10)) eligibleAnchors.Add(Self.AnchorsPerFloor[CurrentFloor][i]);
+            if (CheckConfusionEligible(Self.AnchorsPerFloor[CurrentFloor][i], 1.4f, 10)) 
+            {
+                eligibleAnchors.Add(Self.AnchorsPerFloor[CurrentFloor][i]);
+            }
         }
         return Self.AnchorsPerFloor[CurrentFloor] ?? null;
     }

@@ -7,6 +7,7 @@ public class AnchorWarp : MonoBehaviour, IConfusionItem
     public float MinDistance;
     public float MinAngleDelta;
     public Transform self {get {return transform;}}
+    private Transform currentAnchor;
     public void Confuse()
     {
         float pivotGroundDelta = 0;
@@ -17,7 +18,11 @@ public class AnchorWarp : MonoBehaviour, IConfusionItem
         }
         List<Transform> validTargets = GameControl.EligibleAnchors();
         int random = Random.Range(0, validTargets.Count);
-        transform.position = validTargets[random].position + new Vector3(0, pivotGroundDelta, 0);
-        Debug.Log("Teleported " + name + " to " + validTargets[random].name);
+        Transform selected = validTargets[random];
+        if (currentAnchor) currentAnchor.GetComponent<ObjectAnchor>().Replace(null);
+        selected.GetComponent<ObjectAnchor>().Replace(transform);
+        currentAnchor = selected;
+        transform.position = selected.position + new Vector3(0, pivotGroundDelta, 0);
+        Debug.Log("Teleported " + name + " to " + selected.name);
     }
 }
