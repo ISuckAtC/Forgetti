@@ -22,11 +22,8 @@ public class Dialogue : MonoBehaviour
     private char[] dialogueArray;
     private bool writing;
     [HideInInspector] public bool Chained;
-
-    void Awake()
-    {
-
-    }
+    public bool UseSkip;
+    private bool skip;
 
     void Start()
     {
@@ -44,8 +41,45 @@ public class Dialogue : MonoBehaviour
         dialogueArray = DialogueText.ToCharArray();
     }
 
+    public void Skip()
+    {
+        if (UseSkip)
+        {
+            if (skip) 
+            {
+                Next();
+            }
+            else 
+            {
+                textMesh.text = "";
+                for (int i = 0; i < dialogueArray.Length; ++i)
+                {
+                    textMesh.text += dialogueArray[i];
+                }
+                skip = true;
+            }
+        }
+    }
+
+    void Next()
+    {
+        writing = false;
+        for (int i = 0; i < Chain.Length; ++i)
+        {
+            GameObject chainDialogue = Instantiate(Chain[i], transform.position, transform.rotation);
+            chainDialogue.transform.parent = board;
+            Dialogue dialogue;
+            if (chainDialogue.TryGetComponent<Dialogue>(out dialogue))
+            {
+                dialogue.Chained = true;
+            }
+            Destroy(this);
+        }
+    }
+
     void FixedUpdate()
     {
+        if (skip) return;
         if (index < 0)
         {
             if (++currentDelay > PreDelay)
@@ -58,23 +92,20 @@ public class Dialogue : MonoBehaviour
         }
         if (writing && ++currentDelay > CharacterDelay)
         {
-            textMesh.text += dialogueArray[index++];
-            currentDelay = 0;
-
             if (index == dialogueArray.Length)
             {
-                writing = false;
-                for (int i = 0; i < Chain.Length; ++i) 
+                if (UseSkip) 
                 {
-                    
-                    GameObject chainDialogue = Instantiate(Chain[i], transform.position, transform.rotation);
-                    chainDialogue.transform.parent = board;
-                    Dialogue dialogue;
-                    if (chainDialogue.TryGetComponent<Dialogue>(out dialogue))
-                    {
-                        dialogue.Chained = true;
-                    }
+                    skip = true;
+                    return;
                 }
+                else Next();
+            }
+            else
+            {
+                textMesh.text += dialogueArray[index];
+                index++;
+                currentDelay = 0;
             }
         }
 
