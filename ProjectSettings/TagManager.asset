@@ -7,6 +7,7 @@ TagManager:
   - Door
   - Pickup
   - Board
+  - Journal
   layers:
   - Default
   - TransparentFX

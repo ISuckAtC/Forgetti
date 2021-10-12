@@ -8,6 +8,7 @@ public class TaskManager : MonoBehaviour
     public static TaskManager main;
     public Dictionary<string, (GameObject TaskTextObj, int TaskStatusIndex)> TaskDictionary;
     public JournalController journal;
+    public GameObject journalObject;
     private string[] TaskNames;
     private bool[] TaskStatus;
 

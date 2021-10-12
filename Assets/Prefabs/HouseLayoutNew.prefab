@@ -1,100 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &152733785705380300
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1549764394162356970}
-  - component: {fileID: 1262259820255812731}
-  - component: {fileID: 8355921408300835193}
-  - component: {fileID: 7095677943764998670}
-  m_Layer: 0
-  m_Name: Bathroom Closet
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1549764394162356970
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152733785705380300}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 8352099946106996206}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1262259820255812731
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152733785705380300}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8355921408300835193
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152733785705380300}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7095677943764998670
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152733785705380300}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &335287597841727666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,37 +3610,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &9170922783415603820
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8352099946106996206}
-  m_Layer: 0
-  m_Name: Bathroom Closet
-  m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8352099946106996206
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9170922783415603820}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.282524, y: 3.3953638, z: -43.11112}
-  m_LocalScale: {x: 2.2968, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1549764394162356970}
-  m_Father: {fileID: 5965213979643354345}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5425750382194277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4739,6 +4613,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3395299298260407936, guid: 7f88254e65fa9a9418f10e6321e8f180, type: 3}
   m_PrefabInstance: {fileID: 1906658333118042137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1935224494082828755
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5965213979643354345}
+    m_Modifications:
+    - target: {fileID: 7322542665578789823, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_Name
+      value: Bathroom Closet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.282524
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.3953638
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -43.11112
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+--- !u!4 &8352099946106996206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7580634366078184509, guid: 3ce185b7271184b49a318ee2f21322e7, type: 3}
+  m_PrefabInstance: {fileID: 1935224494082828755}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1980513382319521267
 PrefabInstance:
@@ -6719,14 +6655,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78debe66600f21b4ba4faab0162e4cf6, type: 3}
---- !u!4 &7414783978444383598 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 78debe66600f21b4ba4faab0162e4cf6, type: 3}
-  m_PrefabInstance: {fileID: 7020025240660083333}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7903054365963796436 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 78debe66600f21b4ba4faab0162e4cf6, type: 3}
+  m_PrefabInstance: {fileID: 7020025240660083333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7414783978444383598 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 78debe66600f21b4ba4faab0162e4cf6, type: 3}
   m_PrefabInstance: {fileID: 7020025240660083333}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7141039333471805394

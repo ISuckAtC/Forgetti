@@ -36,7 +36,7 @@ public class PutInContainer : MonoBehaviour
         {
 
             GameObject.FindGameObjectWithTag("Player").transform.position += Vector3.up * 10;
-            GameObject.FindGameObjectWithTag("Journal").transform.position += Vector3.up * 10;
+            TaskManager.main.journalObject.transform.position += Vector3.up * 10;
             TaskManager.main.UpdateTasks(TaskName);
 
         }
