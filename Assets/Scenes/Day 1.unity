@@ -982,7 +982,7 @@ MonoBehaviour:
   - {fileID: 1306595628958306637, guid: 295a10f3f41831a4ca2d8c494c5f1467, type: 3}
   ReactionTask:
   - 2 Get the gift
-  ParentResult: 
+  ParentResult: 01
   ReactionForce: 0
   CraftingDelay: 0
   Crafting: {fileID: 0}
@@ -2340,7 +2340,7 @@ MonoBehaviour:
   - {fileID: 3318627944401027644, guid: 6fbdb5027d85dce41b1f548764d01ee8, type: 3}
   ReactionTask:
   - 
-  ParentResult: 
+  ParentResult: 00
   ReactionForce: 0
   CraftingDelay: 0
 --- !u!1001 &1788219558
@@ -2556,7 +2556,7 @@ MonoBehaviour:
   - {fileID: 0}
   ReactionTask:
   - 5 Go to bed
-  ParentResult: 
+  ParentResult: 00
   ReactionForce: 0
   CraftingDelay: 0
   Crafting: {fileID: 0}
