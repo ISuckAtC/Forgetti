@@ -132,6 +132,6 @@ MonoBehaviour:
   - {fileID: 1459020094579308167, guid: 626a08931852cbc449afcf1aacd98af5, type: 3}
   ReactionTask:
   - 4 Pot a plant
-  test: []
+  ParentResult: 00
   ReactionForce: 0
   CraftingDelay: 0
