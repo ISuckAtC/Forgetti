@@ -15,5 +15,7 @@ public class CraftHubEditor : CraftingEditor
         
 
         base.OnInspectorGUI();
+
+        EditorGUILayout.ObjectField(script.Crafting, typeof(GameObject), true, GUILayout.Width(100));
     }
 }

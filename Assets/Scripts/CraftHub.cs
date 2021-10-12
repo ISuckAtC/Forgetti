@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class CraftHub : CraftingIngredient
 {
-    [SerializeField]
-    private GameObject Crafting;
+    public GameObject Crafting;
     public override IEnumerator Craft(Collision c, Transform other, float delay = 0)
     {
         Crafting = other.gameObject;
