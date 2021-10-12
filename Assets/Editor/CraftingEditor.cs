@@ -56,6 +56,11 @@ public class CraftingEditor : Editor
 
         for (int i = 0; i < script.ReactionIngredients.Count; ++i)
         {
+            if (script.ParentResult.Count <= i) script.ParentResult.Add(false);
+
+
+
+
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LabelField("Ingredient: ", GUILayout.Width(60));
             string key = EditorGUILayout.TextField(script.ReactionIngredients[i], GUILayout.MaxWidth(100));
@@ -65,11 +70,15 @@ public class CraftingEditor : Editor
             EditorGUILayout.Space(0, false);
             EditorGUILayout.LabelField("Task: ", GUILayout.Width(33));
             string task = EditorGUILayout.TextField(script.ReactionTask[i], GUILayout.MaxWidth(100));
+            EditorGUILayout.Space(0, false);
+            EditorGUILayout.LabelField("Parent: ", GUILayout.Width(40));
+            bool parent = EditorGUILayout.Toggle(script.ParentResult[i], GUILayout.MaxWidth(20));
             EditorGUILayout.EndHorizontal();
 
             script.ReactionIngredients[i] = key;
             script.ReactionResults[i] = value;
             script.ReactionTask[i] = task;
+            script.ParentResult[i] = parent;
         }
 
         EditorUtility.SetDirty(script);

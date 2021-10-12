@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -982,7 +982,7 @@ MonoBehaviour:
   - {fileID: 1306595628958306637, guid: 295a10f3f41831a4ca2d8c494c5f1467, type: 3}
   ReactionTask:
   - 2 Get the gift
-  test: []
+  ParentResult: 
   ReactionForce: 0
   CraftingDelay: 0
   Crafting: {fileID: 0}
@@ -1601,7 +1601,7 @@ MonoBehaviour:
   - {fileID: 1306595628958306637, guid: a550b067c43d0354d9080221dc19b6a7, type: 3}
   ReactionTask:
   - 1 Make Tea
-  test: []
+  ParentResult: 00
   ReactionForce: 0
   CraftingDelay: 0
   Crafting: {fileID: 0}
@@ -1785,7 +1785,7 @@ MonoBehaviour:
   - {fileID: 5440326396890001678, guid: 707716e96ded0d542a32965886a53e97, type: 3}
   ReactionTask:
   - Fill mug
-  test: []
+  ParentResult: 
   ReactionForce: 0
   CraftingDelay: 0
   Crafting: {fileID: 0}
@@ -2340,7 +2340,7 @@ MonoBehaviour:
   - {fileID: 3318627944401027644, guid: 6fbdb5027d85dce41b1f548764d01ee8, type: 3}
   ReactionTask:
   - 
-  test: []
+  ParentResult: 
   ReactionForce: 0
   CraftingDelay: 0
 --- !u!1001 &1788219558
@@ -2556,7 +2556,7 @@ MonoBehaviour:
   - {fileID: 0}
   ReactionTask:
   - 5 Go to bed
-  test: []
+  ParentResult: 
   ReactionForce: 0
   CraftingDelay: 0
   Crafting: {fileID: 0}

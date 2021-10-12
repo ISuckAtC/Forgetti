@@ -32,7 +32,7 @@ public class CraftHub : CraftingIngredient
         yield return new WaitForSeconds(delay);
         GameObject g = null;
         if (prefab) g = Instantiate(prefab, position, rotation);
-        //if (g) g.transform.parent = transform;
+        if (g && Reactions[other.name].parent) g.transform.parent = transform;
         
         if (g) 
         {
