@@ -11,9 +11,9 @@ public class BookshelfCrafting : CraftingIngredient
     {
         yield return new WaitForSeconds(delay);
         BasicController.Player.transform.Translate(new Vector3(0, 10, 0), Space.World);
-        GameObject[] objects = GameObject.FindGameObjectsWithTag("Pickup").Where(x => x.name == c.transform.name).ToArray();
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("Pickup").Where(x => x.name == other.name).ToArray();
 
-        TaskManager.main.UpdateTasks(Reactions[c.transform.name].task);
+        TaskManager.main.UpdateTasks(Reactions[other.name].task);
 
         foreach (GameObject o in objects)
         {
