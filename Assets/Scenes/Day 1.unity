@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -985,6 +985,7 @@ MonoBehaviour:
   test: []
   ReactionForce: 0
   CraftingDelay: 0
+  Crafting: {fileID: 0}
 --- !u!1 &815442711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,6 +1604,7 @@ MonoBehaviour:
   test: []
   ReactionForce: 0
   CraftingDelay: 0
+  Crafting: {fileID: 0}
 --- !u!4 &1324791606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
@@ -1786,6 +1788,7 @@ MonoBehaviour:
   test: []
   ReactionForce: 0
   CraftingDelay: 0
+  Crafting: {fileID: 0}
 --- !u!1 &1418131852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1479557730700737668, guid: 5ae5b611add23a6438a242c36debc69a, type: 3}
@@ -2556,6 +2559,7 @@ MonoBehaviour:
   test: []
   ReactionForce: 0
   CraftingDelay: 0
+  Crafting: {fileID: 0}
 --- !u!1 &1948151517
 GameObject:
   m_ObjectHideFlags: 0
