@@ -36,7 +36,7 @@ public class TaskManager : MonoBehaviour
     public void UpdateTasks(string taskName)
     {
 
-        //Debug.Log("Using key: " + TaskName);
+        Debug.Log("Using key: " + taskName);
         if(TaskDictionary.ContainsKey(taskName))
         {
 
@@ -50,7 +50,7 @@ public class TaskManager : MonoBehaviour
     public void UndoTask(string taskName)
     {
 
-        //Debug.Log("Using key: " + TaskName);
+        Debug.Log("Using key: " + taskName);
         if(TaskDictionary.ContainsKey(taskName))
         {
 
