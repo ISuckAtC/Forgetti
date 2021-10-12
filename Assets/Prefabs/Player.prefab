@@ -151,13 +151,13 @@ MonoBehaviour:
   RotationSpeed: 0
   MovementSpeed: 0
   PlayerCamera: {fileID: 2466429690840199503}
-  InteractRange: 4
+  InteractRange: 6
   PickupRange: 4
   HoldDistance: 3
   MinDistance: 1
   MaxDistance: 5
   DistanceSensitivity: 1
-  HoldVelocityMultiplier: 2
+  HoldVelocityMultiplier: 3
   HeldObject: {fileID: 0}
   HeldAngularDrag: 0
 --- !u!1 &2466429690840199500

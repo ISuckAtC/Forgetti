@@ -5,6 +5,7 @@ using UnityEngine;
 public class PutInContainer : MonoBehaviour
 {
 
+    public string TaskName;
     public GameObject[] ObjectsToStore;
     private int itemsStored;
 
@@ -35,6 +36,7 @@ public class PutInContainer : MonoBehaviour
         {
 
             GameObject.FindGameObjectWithTag("Player").transform.position += Vector3.up * 10;
+            TaskManager.main.UpdateTasks(TaskName);
 
         }
 
