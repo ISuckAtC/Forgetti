@@ -7,9 +7,33 @@ public class JournalController : MonoBehaviour
 {
 
     [TextArea]
+    public static JournalController main;
     public string HowToUse;
     public Color FinishedTaskColour;
     public GameObject[] TaskTexts;
+    public Vector3 WarpPos;
+    private Quaternion WarpRot;
+
+    private void Start()
+    {
+
+        main = this;
+        WarpPos = transform.position;
+        WarpRot = transform.rotation;
+
+    }
+
+    public void JournalWarp()
+    {
+
+        Vector3 tempPos = transform.position;
+        Quaternion tempRot = transform.rotation;
+        transform.position = WarpPos;
+        transform.rotation = WarpRot;
+        WarpPos = tempPos;
+        WarpRot = tempRot;
+
+    }
 
     public void UpdateJournal(bool taskStatus, int taskIndex)
     {
