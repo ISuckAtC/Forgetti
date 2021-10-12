@@ -48,4 +48,6 @@ MonoBehaviour:
   DialogueText: 
   PreDelay: 180
   CharacterDelay: 3
-  ChainDialogue: {fileID: 0}
+  Chain: []
+  Chained: 0
+  UseSkip: 1
