@@ -9,11 +9,12 @@ public class BookshelfCrafting : CraftingIngredient
 
     public override IEnumerator Craft(Collision c, Transform other, float delay = 0)
     {
+        GameObject otherObject = other.gameObject;
         yield return new WaitForSeconds(delay);
         BasicController.Player.transform.Translate(new Vector3(0, 10, 0), Space.World);
-        GameObject[] objects = GameObject.FindGameObjectsWithTag("Pickup").Where(x => x.name == other.name).ToArray();
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("Pickup").Where(x => x.name == otherObject.name).ToArray();
 
-        TaskManager.main.UpdateTasks(Reactions[other.name].task);
+        TaskManager.main.UpdateTasks(Reactions[otherObject.name].task);
 
         foreach (GameObject o in objects)
         {
