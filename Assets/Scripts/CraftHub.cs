@@ -51,6 +51,6 @@ public class CraftHub : CraftingIngredient
 
         TaskManager.main.UpdateTasks(Reactions[Crafting.name].task);
         Debug.Log("Destroying " + Crafting.name);
-        //Destroy(Crafting);
+        Destroy(Crafting);
     }
 }

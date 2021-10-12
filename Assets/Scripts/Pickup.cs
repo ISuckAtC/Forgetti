@@ -23,8 +23,8 @@ public class Pickup : MonoBehaviour
         Vector3 targetPosition = playerCam.position + (playerCam.forward * Distance);
         if (!rb)
         {
-            Debug.Log("RB destroyed, nuking this object");
-            Destroy(gameObject);
+            //Debug.Log("RB destroyed, nuking this object");
+            //Destroy(gameObject);
         }
         rb.velocity = (targetPosition - transform.position) * Distance * velocityMultiplier;
     }
