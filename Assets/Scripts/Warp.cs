@@ -13,7 +13,7 @@ public class Warp : MonoBehaviour
     protected MeshRenderer mr;
     void Start()
     {
-        if (Player == null) Player = GameObject.Find("KevsPlayer").transform;
+        if (Player == null) Player = GameObject.FindGameObjectWithTag("Player").transform;
         mr = GetComponent<MeshRenderer>();
     }
 
