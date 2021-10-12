@@ -18,7 +18,7 @@ public class JournalController : MonoBehaviour
     {
 
         main = this;
-        WarpPos = transform.position;
+        WarpPos = transform.position + Vector3.up * 10;
         WarpRot = transform.rotation;
 
     }
@@ -26,7 +26,7 @@ public class JournalController : MonoBehaviour
     public void JournalWarp()
     {
 
-        Vector3 tempPos = transform.position;
+        Vector3 tempPos = transform.position + Vector3.up * 10;
         Quaternion tempRot = transform.rotation;
         transform.position = WarpPos;
         transform.rotation = WarpRot;
