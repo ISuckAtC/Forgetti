@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7525108390124452723}
   - component: {fileID: 7794812774920245696}
+  - component: {fileID: -7974852850726945853}
   m_Layer: 0
   m_Name: PotWithBabyPlant
   m_TagString: Untagged
@@ -48,6 +49,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-7974852850726945853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459020094579308167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1f14112a43aa24b90fe5d6a339cf8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5089126688609325848
 PrefabInstance:
   m_ObjectHideFlags: 0

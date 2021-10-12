@@ -129,7 +129,7 @@ MonoBehaviour:
   ReactionIngredients:
   - FloweOnStick
   ReactionResults:
-  - {fileID: 2911258552174643067, guid: d6266515191b1de4ab82970565e04290, type: 3}
+  - {fileID: 1459020094579308167, guid: 626a08931852cbc449afcf1aacd98af5, type: 3}
   ReactionTask:
   - 4 Pot a plant
   test: []
