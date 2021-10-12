@@ -580,6 +580,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6335209096737204874, guid: 9486825d796071e418c1dacefb874c73, type: 3}
+      propertyPath: m_Name
+      value: SleepBed
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9486825d796071e418c1dacefb874c73, type: 3}
 --- !u!1 &376855133
@@ -2506,6 +2510,32 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 969416898241473751, guid: f0f3a96c97b96484e80afc433a3370aa, type: 3}
   m_PrefabInstance: {fileID: 1691927206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1922906319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2466429690084112988, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
+  m_PrefabInstance: {fileID: 1059231322}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1922906327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922906319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2e537ed5ead944a9845f124cac8388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactionIngredients:
+  - SleepBed
+  ReactionResults:
+  - {fileID: 0}
+  ReactionTask:
+  - 5 Go to bed
+  test: []
+  ReactionForce: 0
+  CraftingDelay: 0
 --- !u!1 &1948151517
 GameObject:
   m_ObjectHideFlags: 0
