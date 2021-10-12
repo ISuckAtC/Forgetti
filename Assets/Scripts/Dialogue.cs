@@ -69,7 +69,7 @@ public class Dialogue : MonoBehaviour
         {
             if (Chain[i])
             {
-                
+
                 GameObject chainDialogue = Instantiate(Chain[i], transform.position, transform.rotation);
                 chainDialogue.transform.parent = board;
                 Dialogue dialogue;
@@ -86,37 +86,6 @@ public class Dialogue : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (skip) return;
-        if (index < 0)
-        {
-            if (++currentDelay > PreDelay)
-            {
-                index++;
-                currentDelay = 0;
-                writing = true;
-                textMesh.text = "";
-            }
-        }
-        if (writing && ++currentDelay > CharacterDelay)
-        {
-            if (index == dialogueArray.Length)
-            {
-                if (UseSkip)
-                {
-                    skip = true;
-                    return;
-                }
-                else Next();
-            }
-            else
-            {
-                textMesh.text += dialogueArray[index];
-                index++;
-                currentDelay = 0;
-            }
-        }
-
-
         float distance = Vector3.Distance(player.position, board.parent.position);
         if (active)
         {
@@ -144,6 +113,35 @@ public class Dialogue : MonoBehaviour
                 Text.GetComponent<MeshRenderer>().enabled = true;
                 board.GetComponent<MeshRenderer>().enabled = true;
                 active = true;
+            }
+        }
+        if (skip) return;
+        if (index < 0)
+        {
+            if (++currentDelay > PreDelay)
+            {
+                index++;
+                currentDelay = 0;
+                writing = true;
+                textMesh.text = "";
+            }
+        }
+        if (writing && ++currentDelay > CharacterDelay)
+        {
+            if (index == dialogueArray.Length)
+            {
+                if (UseSkip)
+                {
+                    skip = true;
+                    return;
+                }
+                else Next();
+            }
+            else
+            {
+                textMesh.text += dialogueArray[index];
+                index++;
+                currentDelay = 0;
             }
         }
     }
