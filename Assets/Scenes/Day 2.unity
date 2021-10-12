@@ -403,7 +403,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1783902766}
     m_Modifications:
-    - target: {fileID: 2674733152762914252, guid: a411648894df17d46b492918513b79e3, type: 3}
+    - target: {fileID: 0}
       propertyPath: ReactionResults.Array.data[0]
       value: 
       objectReference: {fileID: 5440326396890001678, guid: 887ade1e899ebd549a4072d25a7d19bb, type: 3}
