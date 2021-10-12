@@ -982,7 +982,7 @@ MonoBehaviour:
   - {fileID: 1306595628958306637, guid: 295a10f3f41831a4ca2d8c494c5f1467, type: 3}
   ReactionTask:
   - 2 Get the gift
-  ParentResult: 00
+  ParentResult: 01
   ReactionForce: 0
   CraftingDelay: 0
   Crafting: {fileID: 0}
