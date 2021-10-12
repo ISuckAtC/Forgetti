@@ -292,7 +292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   MinDistance: 15
-  MinAngleDelta: 1
+  MinAngleDelta: 1.4
   ColorCycle:
   - {r: 1, g: 1, b: 1, a: 0}
   - {r: 0.30918473, g: 0.30918473, b: 0.33962262, a: 0}
@@ -2802,7 +2802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   MinDistance: 15
-  MinAngleDelta: 2
+  MinAngleDelta: 1.4
   ColorCycle:
   - {r: 0.8679245, g: 0.59362763, b: 0.59362763, a: 0}
   - {r: 0.61667854, g: 0.7735849, b: 0.75372416, a: 0}
