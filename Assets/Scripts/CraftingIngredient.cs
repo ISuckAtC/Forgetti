@@ -6,11 +6,11 @@ using System.Linq;
 
 public class CraftingIngredient : MonoBehaviour
 {
-    public Dictionary<string, (GameObject reaction, string task)> Reactions;
+    public Dictionary<string, (GameObject reaction, string task, bool parent)> Reactions;
     [SerializeField]public List<string> ReactionIngredients;
     public List<GameObject> ReactionResults;
     public List<string> ReactionTask;
-    public List<string> test;
+    public List<bool> ParentResult;
     public float ReactionForce;
     public float CraftingDelay;
     private List<GameObject> hitObjects;
@@ -18,10 +18,10 @@ public class CraftingIngredient : MonoBehaviour
     public void Start()
     {
         hitObjects = new List<GameObject>();
-        Reactions = new Dictionary<string, (GameObject reaction, string task)>();
+        Reactions = new Dictionary<string, (GameObject reaction, string task, bool parent)>();
         for (int i = 0; i < ReactionIngredients.Count; ++i)
         {
-            Reactions.Add(ReactionIngredients[i], (ReactionResults[i], ReactionTask[i]));
+            Reactions.Add(ReactionIngredients[i], (ReactionResults[i], ReactionTask[i], ParentResult[i]));
         }
     }
 
