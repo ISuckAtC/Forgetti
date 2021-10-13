@@ -22,5 +22,7 @@ public class CraftAndTP : CraftingIngredient
         Destroy(gameObject);
         BasicController.Player.transform.Translate(new Vector3(0, 10, 0), Space.World);
         g.transform.Translate(new Vector3(0, 10, 0), Space.World);
+
+        GameControl.CurrentFloor++;
     }
 }
