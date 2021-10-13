@@ -33,6 +33,16 @@ public class TaskManager : MonoBehaviour
 
     }
 
+    public void TeleportUp()
+    {
+
+        GameObject.FindGameObjectWithTag("Player").transform.position += Vector3.up * 10;
+        journalObject.transform.position += Vector3.up * 10;
+        journal.JournalWarp();
+        GameControl.CurrentFloor++;
+
+    }
+
     public void UpdateTasks(string taskName)
     {
 
