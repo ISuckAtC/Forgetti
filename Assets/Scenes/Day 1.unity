@@ -2460,7 +2460,7 @@ MonoBehaviour:
   ReactionIngredients:
   - SleepBed
   ReactionResults:
-  - {fileID: 0}
+  - {fileID: 5223772313648161367, guid: a469c4d1aed298a4a95284738bd24a41, type: 3}
   ReactionTask:
   - 5 Go to bed
   ParentResult: 00
