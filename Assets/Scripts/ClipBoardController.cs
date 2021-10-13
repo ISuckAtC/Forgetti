@@ -62,6 +62,10 @@ public class ClipBoardController : MonoBehaviour
                     case "Quit":
                     Application.Quit();
                     break;
+
+                    case "MainMenu":
+                    SceneManager.LoadScene(0);
+                    break;
                     
                 }
 

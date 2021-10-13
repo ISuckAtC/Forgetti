@@ -93,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5225123778644774659, guid: cc90a4b7aac027740a12e650a6edd237, type: 3}
       propertyPath: m_text
-      value: Make tea for your Daughter, >Name<.
+      value: Make tea for your Daughter.
       objectReference: {fileID: 0}
     - target: {fileID: 7255234786465487381, guid: cc90a4b7aac027740a12e650a6edd237, type: 3}
       propertyPath: m_Name
