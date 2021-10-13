@@ -40,13 +40,18 @@ public class GameControl : MonoBehaviour
 
     public static bool CheckConfusionEligible(Transform obj, float minAngleDelta = 1.4f, float minDistance = 10f)
     {
-        if (Vector3.Distance(obj.position, BasicController.Player.transform.position) < minDistance)
+        if (Vector3.Distance(obj.position, BasicController.Player.transform.position) > minDistance)
         {
             Vector3 angleToPlayer = (obj.position - BasicController.Player.transform.position).normalized;
             Vector3 vAngleDelta = BasicController.Player.transform.forward - angleToPlayer;
             if (vAngleDelta.magnitude > minAngleDelta || vAngleDelta.magnitude < -minAngleDelta)
             {
-                if (obj.GetComponent<ObjectAnchor>().StoredObject == null) return true;
+                ObjectAnchor anchor;
+                if (obj.TryGetComponent<ObjectAnchor>(out anchor)) 
+                {
+                    if (anchor.StoredObject == null) return true;
+                }
+                else return true;
             }
         }
         return false;
