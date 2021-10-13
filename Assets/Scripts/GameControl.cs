@@ -17,7 +17,7 @@ public class GameControl : MonoBehaviour
 
     public void Start()
     {
-        InvokeRepeating(nameof(Confusion), 5, 10);
+        InvokeRepeating(nameof(Confusion), 5, ConfusionRate);
     }
 
     public void Confusion()
