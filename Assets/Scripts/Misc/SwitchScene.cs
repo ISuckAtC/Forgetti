@@ -5,11 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour
 {
+
+    public bool UseSceneID;
+    public int SceneID;
     
     void Start()
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if(UseSceneID)
+            SceneManager.LoadScene(SceneID);
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         
     }
 
