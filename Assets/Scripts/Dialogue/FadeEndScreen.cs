@@ -6,57 +6,34 @@ using UnityEngine.UI;
 
 public class FadeEndScreen : MonoBehaviour
 {
-    public GameObject FadeoutScreen;
-    public bool Toggle;
+
+    public Image img;
+    public Text txt;
 
     // Start is called before the first frame update
     void Start()
     {
         transform.parent = null;
-                    StartCoroutine(FadeToBlack());
+        StartCoroutine(FadeToBlack());
     }
 
-    public IEnumerator FadeToBlack (bool FadeToBlack = true, int fadeSpeed = 1)
+    public IEnumerator FadeToBlack()
     {
-        //yield return new WaitForEndOfFrame();
 
-        Color objectColor;
+        Color objectColorA, objectColorB;
 
-        if (Toggle)
+        objectColorA = img.color;
+        objectColorB = txt.color;
+
+        while (objectColorA.a < 1)
         {
-             objectColor = FadeoutScreen.GetComponent<Image>().color;
-        }
-        else
-        {
-             objectColor = FadeoutScreen.GetComponent<Text>().color;
-        }
+            
+            objectColorA = new Color(objectColorA.r, objectColorA.g, objectColorA.b, objectColorA.a + Time.deltaTime);
+            objectColorB = new Color(objectColorB.r, objectColorB.g, objectColorB.b, objectColorB.a + Time.deltaTime);
 
-        float fadeAmount;
-
-        if (FadeToBlack)
-        {
-            while (objectColor.a < 1)
-            {
-                fadeAmount = objectColor.a + (fadeSpeed * Time.deltaTime);
-
-                objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
-
-                if(Toggle)
-                {
-                    FadeoutScreen.GetComponent<Image>().color = objectColor;
-                }
-                else
-                {
-                    FadeoutScreen.GetComponent<Text>().color = objectColor; 
-                }
-                yield return null;
-
-                
-
-            }
         }
 
-
+        yield return null;
 
     }
    
