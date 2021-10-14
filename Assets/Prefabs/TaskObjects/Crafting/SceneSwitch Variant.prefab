@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1075660041521737662, guid: 1004b5fcb9397a74fab881d0f693e6ff, type: 3}
       propertyPath: m_Name
-      value: SceneSwitch
+      value: SceneSwitch Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1894216132143107596, guid: 1004b5fcb9397a74fab881d0f693e6ff, type: 3}
       propertyPath: m_RootOrder
@@ -56,8 +56,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2748296154433364591, guid: 1004b5fcb9397a74fab881d0f693e6ff, type: 3}
+      propertyPath: SceneID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2748296154433364591, guid: 1004b5fcb9397a74fab881d0f693e6ff, type: 3}
       propertyPath: UseSceneID
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1004b5fcb9397a74fab881d0f693e6ff, type: 3}
