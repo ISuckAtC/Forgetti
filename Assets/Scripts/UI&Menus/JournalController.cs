@@ -42,6 +42,13 @@ public class JournalController : MonoBehaviour
         {
 
             TaskTexts[taskIndex].GetComponent<TextMeshPro>().color = FinishedTaskColour;
+            
+            if(taskIndex + 1 < TaskTexts.Length)
+            {
+
+                TaskTexts[taskIndex + 1].SetActive(true);
+
+            }
 
         }
 
