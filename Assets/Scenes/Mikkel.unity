@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -964,15 +964,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d43863e672a7940ba36eb8328bfd9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReactiveIngredients:
-  - Book 1
-  - Book 2
-  - Book 3
-  Reactions:
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  ReactionIngredients: []
+  ReactionResults: []
+  ReactionTask: []
+  ParentResult: 
   ReactionForce: 0
+  CraftingDelay: 0
 --- !u!54 &60871341
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1733,6 +1730,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97456736}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &103679295 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+  m_PrefabInstance: {fileID: 944270076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &109192082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10590,15 +10592,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d43863e672a7940ba36eb8328bfd9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReactiveIngredients:
-  - Book 1
-  - Book 2
-  - Book 3
-  Reactions:
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  ReactionIngredients: []
+  ReactionResults: []
+  ReactionTask: []
+  ParentResult: 
   ReactionForce: 0
+  CraftingDelay: 0
 --- !u!54 &784424189
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12821,6 +12820,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943657676}
   m_Mesh: {fileID: -3292925553009838691, guid: 6246b7ae124035a419515c12a8f2848e, type: 3}
+--- !u!1001 &944270076
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1914602779}
+    m_Modifications:
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -34.796
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336604, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054873934336607, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: m_Name
+      value: Daughter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1071054874151170424, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
+      propertyPath: FirstDialogue
+      value: 
+      objectReference: {fileID: 9053742177961670782, guid: 3a133f3cc6c14cd42884b6b94990a70e, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0fab3d7866906b94fbc2b2a62d89e18a, type: 3}
 --- !u!1 &945569392
 GameObject:
   m_ObjectHideFlags: 0
@@ -14467,15 +14527,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d43863e672a7940ba36eb8328bfd9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReactiveIngredients:
-  - Book 1
-  - Book 2
-  - Book 3
-  Reactions:
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  ReactionIngredients: []
+  ReactionResults: []
+  ReactionTask: []
+  ParentResult: 
   ReactionForce: 0
+  CraftingDelay: 0
 --- !u!54 &1081809030
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18356,15 +18413,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d43863e672a7940ba36eb8328bfd9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ReactiveIngredients:
-  - Book 1
-  - Book 2
-  - Book 3
-  Reactions:
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
-  - {fileID: 1705696656295663863, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
+  ReactionIngredients: []
+  ReactionResults: []
+  ReactionTask: []
+  ParentResult: 
   ReactionForce: 0
+  CraftingDelay: 0
 --- !u!54 &1390806855
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21672,6 +21726,12 @@ MonoBehaviour:
   InteractRange: 10
   PickupRange: 10
   HoldDistance: 3
+  MinDistance: 1
+  MaxDistance: 5
+  DistanceSensitivity: 1
+  HoldVelocityMultiplier: 0
+  HeldObject: {fileID: 0}
+  HeldAngularDrag: 0
 --- !u!54 &1638946106
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24690,6 +24750,37 @@ Transform:
   - {fileID: 792937057}
   m_Father: {fileID: 0}
   m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1914602778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1914602779}
+  m_Layer: 0
+  m_Name: Talk To Daughter Objective.
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1914602779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914602778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 103679295}
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932104148
 GameObject:
