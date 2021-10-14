@@ -9,7 +9,7 @@ public class JournalController : MonoBehaviour
     public static JournalController main;
     [TextArea]
     public string HowToUse;
-    public Color FinishedTaskColour;
+    public Color FinishedTaskColour, Unfinished;
     public GameObject[] TaskTexts;
     public Vector3 WarpPos;
     private Quaternion WarpRot;
@@ -51,6 +51,19 @@ public class JournalController : MonoBehaviour
             }
 
         }
+        /*else
+        {
+
+            TaskTexts[taskIndex].GetComponent<TextMeshPro>().color = Unfinished;
+            
+            if(taskIndex + 1 < TaskTexts.Length)
+            {
+
+                TaskTexts[taskIndex + 1].SetActive(false);
+
+            }
+
+        }*/
 
     }
 
