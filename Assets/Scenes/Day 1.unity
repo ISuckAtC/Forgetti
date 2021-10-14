@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4 Pot a plant
       objectReference: {fileID: 0}
+    - target: {fileID: 4299794263125332980, guid: c2e7e1791aaf4744ab204b245f74af68, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5019956763263288985, guid: c2e7e1791aaf4744ab204b245f74af68, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -978,11 +982,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ReactionIngredients:
   - Daughters gift
+  - Daughters gift
   ReactionResults:
   - {fileID: 1306595628958306637, guid: 295a10f3f41831a4ca2d8c494c5f1467, type: 3}
+  - {fileID: 2044313935908300459, guid: 6ab4d17f40f747e44b7f5a3bb93b14aa, type: 3}
   ReactionTask:
   - 2 Get the gift
-  ParentResult: 01
+  - s
+  ParentResult: 0100
   ReactionForce: 0
   CraftingDelay: 0
   Crafting: {fileID: 0}
@@ -1188,6 +1195,10 @@ PrefabInstance:
     - target: {fileID: 6620590446719709605, guid: 8c2c392e132d8ad4c93f504c1081b6ff, type: 3}
       propertyPath: m_Name
       value: 5 Go to bed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620590446719709605, guid: 8c2c392e132d8ad4c93f504c1081b6ff, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c2c392e132d8ad4c93f504c1081b6ff, type: 3}
@@ -1504,11 +1515,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ReactionIngredients:
   - Mug With Teabag(Clone)
+  - Mug With Teabag(Clone)
   ReactionResults:
   - {fileID: 1306595628958306637, guid: a550b067c43d0354d9080221dc19b6a7, type: 3}
+  - {fileID: 3522678136518417014, guid: 818d86d9d42071a478de620055d65a2f, type: 3}
   ReactionTask:
   - 1 Make Tea
-  ParentResult: 01
+  - s
+  ParentResult: 0100
   ReactionForce: 0
   CraftingDelay: 0
   Crafting: {fileID: 0}
@@ -1781,6 +1795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TaskName: 3 Clean the dishes
+  SpawnOnComplete: {fileID: 3150882885775606644, guid: 1760f94391263ae428d083bc24ab838f, type: 3}
   ObjectsToStore:
   - {fileID: 174097744}
   - {fileID: 1418131852}
@@ -1860,6 +1875,10 @@ PrefabInstance:
     - target: {fileID: 2643701128801393402, guid: 9d41feef1305c5345904fd3afabaee16, type: 3}
       propertyPath: m_Name
       value: 3 Clean the dishes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643701128801393402, guid: 9d41feef1305c5345904fd3afabaee16, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6535242195777638295, guid: 9d41feef1305c5345904fd3afabaee16, type: 3}
       propertyPath: m_Pivot.x
@@ -2322,6 +2341,10 @@ PrefabInstance:
     - target: {fileID: 4073932852969086087, guid: 833de5236e581484d9dac1e060b4028c, type: 3}
       propertyPath: m_Name
       value: 2 Get the gift
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073932852969086087, guid: 833de5236e581484d9dac1e060b4028c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5082325742172097002, guid: 833de5236e581484d9dac1e060b4028c, type: 3}
       propertyPath: m_Pivot.x

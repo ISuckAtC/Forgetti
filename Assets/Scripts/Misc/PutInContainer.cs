@@ -6,6 +6,7 @@ public class PutInContainer : MonoBehaviour
 {
 
     public string TaskName;
+    public GameObject SpawnOnComplete;
     public GameObject[] ObjectsToStore;
     private int itemsStored;
 
@@ -37,6 +38,8 @@ public class PutInContainer : MonoBehaviour
 
             TaskManager.main.TeleportUp();
             TaskManager.main.UpdateTasks(TaskName);
+            if(SpawnOnComplete)
+                Instantiate(SpawnOnComplete, transform.position, Quaternion.identity);
 
         }
 
