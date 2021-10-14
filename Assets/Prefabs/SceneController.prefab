@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadeSpeed: 0
-  Overlay: {fileID: 0}
+  Overlay: {fileID: 2014943101182105229}
   Cover: 0
 --- !u!1 &6879970102757964423
 GameObject:
