@@ -93,13 +93,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5225123778644774659, guid: cc90a4b7aac027740a12e650a6edd237, type: 3}
       propertyPath: m_text
-      value: 'Mix Paint in the Art Room
+      value: 'Mix out Light Turquoise Paint in the Art Room.
 
-        until you have Light Turquise.'
+        (Mix Green
+        with Blue then lighten with White)'
       objectReference: {fileID: 0}
     - target: {fileID: 7255234786465487381, guid: cc90a4b7aac027740a12e650a6edd237, type: 3}
       propertyPath: m_Name
-      value: 3 Mix Paint to get Light Turquise Variant
+      value: 2 Mix Paint to get Light Turquise
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc90a4b7aac027740a12e650a6edd237, type: 3}
