@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a276345326e0bf54cb9f2bb4b68b3258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FadeSpeed: 0
+  FadeSpeed: 0.01
   Overlay: {fileID: 2014943101182105229}
   Cover: 0
 --- !u!1 &6879970102757964423
