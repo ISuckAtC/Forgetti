@@ -56,8 +56,24 @@ PrefabInstance:
       value: Daughter 1
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
-      propertyPath: DialogueText
-      value: Good morning dad!
+      propertyPath: PreDelay
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: DialogueText
+      value: 'Daugther: Good morning dad!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: CloseUpDistance
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: Chain.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: Chain.Array.data[0]
+      value: 
+      objectReference: {fileID: 3996105413404928672, guid: bbe43e319ca0db947ae095ac015d7df0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}

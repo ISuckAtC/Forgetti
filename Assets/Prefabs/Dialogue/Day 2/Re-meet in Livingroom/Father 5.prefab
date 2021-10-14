@@ -56,9 +56,25 @@ PrefabInstance:
       value: Father 5
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
-      propertyPath: DialogueText
-      value: "Good morning honey\u2026 what are you doing here, I thought you left
-        back to the city. Didn't you have to get to work?\r"
+      propertyPath: PreDelay
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: DialogueText
+      value: "Father: Good morning honey\u2026 what are you doing here, I thought
+        you left back to the city. Didn't you have to get to work?\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: CloseUpDistance
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: Chain.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: Chain.Array.data[0]
+      value: 
+      objectReference: {fileID: 5955919272825490915, guid: 1c0c6ddd40923214f8495a308ef9020b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}

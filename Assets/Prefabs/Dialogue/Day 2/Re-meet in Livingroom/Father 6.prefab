@@ -56,8 +56,24 @@ PrefabInstance:
       value: Father 6
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
-      propertyPath: DialogueText
-      value: 'What? Did you get a job in the town? Why didn''t you tell me? '
+      propertyPath: PreDelay
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: DialogueText
+      value: 'Father: What? Did you get a job in the town? Why didn''t you tell me? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: CloseUpDistance
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: Chain.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: Chain.Array.data[0]
+      value: 
+      objectReference: {fileID: 7324336744881869805, guid: 00aa7b600e23d294cb3ae7a06e651351, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}

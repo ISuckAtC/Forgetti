@@ -56,9 +56,25 @@ PrefabInstance:
       value: Father 7
       objectReference: {fileID: 0}
     - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
-      propertyPath: DialogueText
-      value: "Months? You came here for a weekend, and you don't have to take care
-        of me\r."
+      propertyPath: PreDelay
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: DialogueText
+      value: "Father: Months? You came here for a weekend, and you don't have to
+        take care of me\r."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: CloseUpDistance
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: Chain.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5810963307210545419, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
+      propertyPath: Chain.Array.data[0]
+      value: 
+      objectReference: {fileID: 5728396153691038132, guid: 766368d89e964514ba263d75082e1523, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2f15e1c86ab6ef4884ce889e1887ce2, type: 3}
