@@ -132,7 +132,7 @@ MonoBehaviour:
   ReactionResults:
   - {fileID: 6003234604392435489, guid: c2c3274d58779a2469a43c971769cd1d, type: 3}
   ReactionTask:
-  - 2 Mix Paint to get Light Turquise
+  - 2 Mix Paint
   ParentResult: 00
   ReactionForce: 0
   CraftingDelay: 0
