@@ -630,11 +630,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2737768438634734618, guid: a411648894df17d46b492918513b79e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.301429
+      value: -14.472
       objectReference: {fileID: 0}
     - target: {fileID: 2737768438634734618, guid: a411648894df17d46b492918513b79e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.52612
+      value: 4.409
       objectReference: {fileID: 0}
     - target: {fileID: 2737768438634734618, guid: a411648894df17d46b492918513b79e3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1032,16 +1032,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ReactionIngredients:
   - Paint Bucket Turquoise(Clone)
-  - Paint Bucket Turquoise
   - Canvas
   ReactionResults:
-  - {fileID: 4089428768498990261, guid: 08c32db4e5d30f34796d891bcda901ec, type: 3}
   - {fileID: 4089428768498990261, guid: 08c32db4e5d30f34796d891bcda901ec, type: 3}
   - {fileID: 1493675828543489813, guid: 1776ec785acaba94b85047f70b453d03, type: 3}
   ReactionTask:
   - da
-  - da
-  - 2 Start a painting
+  - 3 Start a painting
   ParentResult: 010100
   ReactionForce: 0
   CraftingDelay: 0
