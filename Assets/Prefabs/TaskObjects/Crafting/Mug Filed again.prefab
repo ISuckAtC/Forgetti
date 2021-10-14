@@ -78,7 +78,7 @@ MonoBehaviour:
   ReactionIngredients:
   - Teabag
   ReactionResults:
-  - {fileID: 5440326396890001678, guid: 8453b0624f7012247a7bb66671e9b8ff, type: 3}
+  - {fileID: 5440326396890001678, guid: 618282d82e2791848a1276b1fdb5997d, type: 3}
   ReactionTask:
   - 1 Make some tea
   ParentResult: 00
