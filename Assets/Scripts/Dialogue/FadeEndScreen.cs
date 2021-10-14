@@ -30,6 +30,8 @@ public class FadeEndScreen : MonoBehaviour
             
             objectColorA = new Color(objectColorA.r, objectColorA.g, objectColorA.b, objectColorA.a + Time.deltaTime);
             objectColorB = new Color(objectColorB.r, objectColorB.g, objectColorB.b, objectColorB.a + Time.deltaTime);
+            img.color = objectColorA;
+            img.color = objectColorB;
 
         }
 
