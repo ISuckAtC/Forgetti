@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff1f14112a43aa24b90fe5d6a339cf8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  warpJournal: 0
 --- !u!1 &1938119805471260505
 GameObject:
   m_ObjectHideFlags: 0

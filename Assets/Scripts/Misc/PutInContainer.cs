@@ -36,7 +36,7 @@ public class PutInContainer : MonoBehaviour
         if(itemsStored >= ObjectsToStore.Length)
         {
 
-            TaskManager.main.TeleportUp();
+            TaskManager.main.TeleportUp(true);
             TaskManager.main.UpdateTasks(TaskName);
             if(SpawnOnComplete)
                 Instantiate(SpawnOnComplete, transform.position, Quaternion.identity);

@@ -33,12 +33,13 @@ public class TaskManager : MonoBehaviour
 
     }
 
-    public void TeleportUp()
+    public void TeleportUp(bool warpJournal)
     {
 
         GameObject.FindGameObjectWithTag("Player").transform.position += Vector3.up * 10;
         journalObject.transform.position += Vector3.up * 10;
-        journal.JournalWarp();
+        if(warpJournal)
+            journal.JournalWarp();
         GameControl.CurrentFloor++;
 
     }

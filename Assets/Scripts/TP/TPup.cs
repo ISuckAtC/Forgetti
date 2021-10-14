@@ -5,10 +5,12 @@ using UnityEngine;
 public class TPup : MonoBehaviour
 {
 
+    public bool warpJournal = true;
+
     void Start()
     {
 
-        TaskManager.main.TeleportUp();
+        TaskManager.main.TeleportUp(warpJournal);
         Destroy(gameObject, 2);
         
     }
