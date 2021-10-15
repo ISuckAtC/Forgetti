@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 6c803e06acb2f8749b778412ab7b551c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1920,7 +1920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65506e471773f9c4794548dea65ec999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinDistance: 100
+  MinDistance: 2
   MinAngleDelta: 1.4
 --- !u!1001 &1326931066
 PrefabInstance:
@@ -1976,6 +1976,10 @@ PrefabInstance:
     - target: {fileID: 2929564554349941342, guid: ccb27451fd668664e81e126783ad15e4, type: 3}
       propertyPath: m_Name
       value: SceneLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929564554349941343, guid: ccb27451fd668664e81e126783ad15e4, type: 3}
+      propertyPath: m_Intensity
+      value: 0.78
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccb27451fd668664e81e126783ad15e4, type: 3}

@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 7cdb5c5707d59b349bef6aa3a5a25318
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Day 1.unity
     guid: 6cceb0cec523c1e4f84c92edac5f99aa
   - enabled: 1
@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day 2.unity
     guid: e72d8cba099dddc49a0978369e24c8e3
+  - enabled: 1
+    path: Assets/Scenes/Day 2 MoreConfusion.unity
+    guid: 6d179125281799d46b8358ee741f89a6
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cd88888792988ef4fa8c93cf50c35688, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 6dfa476d43c4f4340bb6d011c671d93d, type: 2}

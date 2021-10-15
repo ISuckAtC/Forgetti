@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: dfea5c955e47f26409bf1b74708bfd7e, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -971,6 +971,10 @@ PrefabInstance:
     - target: {fileID: 2929564554349941342, guid: ccb27451fd668664e81e126783ad15e4, type: 3}
       propertyPath: m_Name
       value: SceneLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929564554349941343, guid: ccb27451fd668664e81e126783ad15e4, type: 3}
+      propertyPath: m_Intensity
+      value: 0.78
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccb27451fd668664e81e126783ad15e4, type: 3}
@@ -2389,7 +2393,7 @@ MonoBehaviour:
   ReactionIngredients:
   - SleepBed
   ReactionResults:
-  - {fileID: 5223772313648161367, guid: a469c4d1aed298a4a95284738bd24a41, type: 3}
+  - {fileID: 5223772313648161367, guid: a8ca7e46e1d3e604d8fa469ffee8f321, type: 3}
   ReactionTask:
   - 5 Go to bed
   ParentResult: 00
