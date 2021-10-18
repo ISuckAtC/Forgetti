@@ -23,9 +23,10 @@ public class TaskManipulator : MonoBehaviour
     private void Start()
     {
 
-        tm = TaskManager.main;
-
         if(!UseTrigger)
+        {
+
+            tm = TaskManager.main;
             switch (TaskMode)
             {
                 
@@ -46,6 +47,10 @@ public class TaskManipulator : MonoBehaviour
                 break;
 
             }
+
+            Destroy(gameObject, 0.5f);
+        
+        }
 
     }
 
@@ -53,6 +58,9 @@ public class TaskManipulator : MonoBehaviour
     {
 
         if(col.gameObject.tag == "Player")
+        {
+
+            tm = TaskManager.main;
             switch (TaskMode)
             {
                 
@@ -69,10 +77,15 @@ public class TaskManipulator : MonoBehaviour
                 break;
 
                 case taskChangeMode.LockTask:
-                for(int i = 0; i < TaskNames.Length; i++) tm.LockTask(TaskNames[i]);
+                for(int i = 0; i < TaskNames.Length; i++) 
+                tm.LockTask(TaskNames[i]);
                 break;
 
             }
+
+            Destroy(gameObject, 0.5f);
+
+        }
 
     }
 
