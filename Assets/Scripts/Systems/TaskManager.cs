@@ -6,9 +6,10 @@ public class TaskManager : MonoBehaviour
 {
 
     public static TaskManager main;
-    public Dictionary<string, (GameObject TaskTextObj, int TaskStatusIndex)> TaskDictionary;
+    public Dictionary<string, (GameObject TaskTextObj, int TaskStatusIndex, GameObject TaskParent)> TaskDictionary;
     public JournalController journal;
     public GameObject journalObject;
+    public GameObject[] TaskParents;
     private string[] TaskNames;
     private bool[] TaskStatus;
 
@@ -17,7 +18,7 @@ public class TaskManager : MonoBehaviour
 
         main = this;
 
-        TaskDictionary = new Dictionary<string, (GameObject TaskTextObj, int TaskStatusIndex)>();
+        TaskDictionary = new Dictionary<string, (GameObject TaskTextObj, int TaskStatusIndex, GameObject TaskParent)>();
 
         TaskNames = new string[journal.TaskTexts.Length];
         TaskStatus = new bool[journal.TaskTexts.Length];
@@ -26,8 +27,8 @@ public class TaskManager : MonoBehaviour
         {
 
             TaskNames[i] = journal.TaskTexts[i].name;
-            Debug.Log("Ran: " + i + " TaskName: " + TaskNames[i] + " obj: " + journal.TaskTexts[i] + " Stat index: " + i);
-            TaskDictionary.Add(TaskNames[i], (journal.TaskTexts[i], i));
+            Debug.Log("Ran: " + i + " TaskName: " + TaskNames[i] + " obj: " + journal.TaskTexts[i] + " Status index: " + i + " TaskParent: " + TaskParents[i].name);
+            TaskDictionary.Add(TaskNames[i], (journal.TaskTexts[i], i, TaskParents[i]));
 
         }
 
@@ -44,7 +45,7 @@ public class TaskManager : MonoBehaviour
 
     }
 
-    public void UpdateTasks(string taskName)
+    public void CompleteTask(string taskName)
     {
 
         Debug.Log("Using key: " + taskName);
@@ -53,6 +54,12 @@ public class TaskManager : MonoBehaviour
 
             TaskStatus[TaskDictionary[taskName].TaskStatusIndex] = true;
             journal.UpdateJournal(TaskStatus[TaskDictionary[taskName].TaskStatusIndex], TaskDictionary[taskName].TaskStatusIndex);
+            if(journal.TaskTexts[TaskDictionary[taskName].TaskStatusIndex + 1])
+            {
+
+                TaskParents[TaskDictionary[taskName].TaskStatusIndex + 1].SetActive(true);
+                
+            }
 
         }
 
@@ -79,6 +86,7 @@ public class TaskManager : MonoBehaviour
         {
 
             journal.UnlockTask(TaskDictionary[taskName].TaskStatusIndex);
+            TaskDictionary[taskName].TaskParent.SetActive(true);
 
         }
 
@@ -91,6 +99,7 @@ public class TaskManager : MonoBehaviour
         {
 
             journal.LockTask(TaskDictionary[taskName].TaskStatusIndex);
+            TaskDictionary[taskName].TaskParent.SetActive(false);
 
         }
 

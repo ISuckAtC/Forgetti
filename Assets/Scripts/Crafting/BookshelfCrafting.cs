@@ -17,7 +17,7 @@ public class BookshelfCrafting : CraftingIngredient
 
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Pickup").Where(x => x.name == otherObject.name).ToArray();
 
-        TaskManager.main.UpdateTasks(Reactions[otherObject.name].task);
+        TaskManager.main.CompleteTask(Reactions[otherObject.name].task);
 
         foreach (GameObject o in objects)
         {

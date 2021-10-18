@@ -28,7 +28,7 @@ public class TaskManipulator : MonoBehaviour
         {
             
             case taskChangeMode.FinishTask:
-            for(int i = 0; i < TaskNames.Length; i++) tm.UpdateTasks(TaskNames[i]);
+            for(int i = 0; i < TaskNames.Length; i++) tm.CompleteTask(TaskNames[i]);
             break;
 
             case taskChangeMode.UndoTask:
