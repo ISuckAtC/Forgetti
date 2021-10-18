@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6639169546651911066}
+  - component: {fileID: 2940281127218244887}
   m_Layer: 0
   m_Name: WateringCan
   m_TagString: Untagged
@@ -31,6 +32,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2940281127218244887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5591303597056134517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2e537ed5ead944a9845f124cac8388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactionIngredients:
+  - Sink
+  ReactionResults:
+  - {fileID: 4062220252081523059, guid: b6418b7ae3bab0842a68d8a6341e5639, type: 3}
+  ReactionTask:
+  - 
+  ParentResult: 00
+  ReactionForce: 0
+  CraftingDelay: 0
+  Crafting: {fileID: 0}
 --- !u!1001 &1766300142544228006
 PrefabInstance:
   m_ObjectHideFlags: 0
