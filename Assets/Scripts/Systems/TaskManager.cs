@@ -27,7 +27,7 @@ public class TaskManager : MonoBehaviour
         {
 
             TaskNames[i] = journal.TaskTexts[i].name;
-            Debug.Log("Ran: " + i + " TaskName: " + TaskNames[i] + " obj: " + journal.TaskTexts[i] + " Status index: " + i + " TaskParent: " + TaskParents[i].name);
+            Debug.Log("Ran: " + i + " times... TaskName: (" + TaskNames[i] + ") Text obj: " + journal.TaskTexts[i] + " Status index: " + i + " TaskParent: " + TaskParents[i].name);
             TaskDictionary.Add(TaskNames[i], (journal.TaskTexts[i], i, TaskParents[i]));
 
         }
