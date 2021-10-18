@@ -31,7 +31,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2714729254106962085}
   - {fileID: 1849493409564430010}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,7 +50,10 @@ MonoBehaviour:
   HowToUse: Tasks added here are used through the TaskManager. To add a new task
     Create an object under JournalTasks and name it according to the task then add
     it to the TaskTexts array, this name is used through the TaskManager
+  JournalAnchor: {fileID: 0}
+  JournalVisuals: {fileID: 0}
   FinishedTaskColour: {r: 0.10215601, g: 1, b: 0.0141509175, a: 1}
+  Unfinished: {r: 0, g: 0, b: 0, a: 0}
   TaskTexts: []
   WarpPos: {x: 0, y: 0, z: 0}
 --- !u!23 &3414791271902756582
@@ -148,9 +150,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.0096676}
-  m_Children: []
+  m_Children:
+  - {fileID: 2714729254106962085}
   m_Father: {fileID: 3445297230918317331}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8321273642757872613
 MeshFilter:
@@ -238,9 +241,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8410332470068085025}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.007}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.7240681}
+  m_LocalScale: {x: 1, y: 1, z: 103.43829}
   m_Children: []
-  m_Father: {fileID: 3445297230918317331}
+  m_Father: {fileID: 1849493409564430010}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
