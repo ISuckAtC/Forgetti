@@ -257,6 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   journal: {fileID: 923089315}
   journalObject: {fileID: 923089316}
+  TaskParents: []
 --- !u!4 &197918189
 Transform:
   m_ObjectHideFlags: 0
@@ -859,7 +860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2466429690084112976, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2466429690084112976, guid: 15aa23dcb93295a499afc9a28623f1d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -949,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3445297230918317331, guid: 59ba0ff0027a70041a76f26c2851284c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.575
+      value: 0.939
       objectReference: {fileID: 0}
     - target: {fileID: 3445297230918317331, guid: 59ba0ff0027a70041a76f26c2851284c, type: 3}
       propertyPath: m_LocalPosition.z
