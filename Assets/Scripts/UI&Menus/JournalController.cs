@@ -53,6 +53,18 @@ public class JournalController : MonoBehaviour , IInteractable
 
     }
 
+    public void LoseJournal()
+    {
+
+        transform.parent = null;
+        rb.constraints = RigidbodyConstraints.None;
+        rb.detectCollisions = true;
+        journalOnPlayer = false;
+        JournalVisuals.SetActive(true);
+        transform.position = Camera.main.transform.forward + Camera.main.transform.position;
+
+    }
+
     private void ToggleJournal()
     {
 
