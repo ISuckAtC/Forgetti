@@ -47,7 +47,7 @@ public class CraftingIngredient : MonoBehaviour
     public void OnCollisionEnter(Collision c)
     {
         Transform other = c.transform;
-        Debug.Log(name + " hit " + other.name);
+        if (Input.GetKey(KeyCode.LeftShift)) Debug.Log(name + " hit " + other.name);
         if (hitObjects.Contains(c.gameObject)) return;
         if (Reactions.ContainsKey(other.name))
         {

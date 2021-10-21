@@ -222,6 +222,12 @@ public class EventControllerEditor : Editor
                         case "ObjectStateEvent":
                             addedEvent = (ObjectStateEvent)CreateInstance("ObjectStateEvent");
                             break;
+                        case "WarpEvent":
+                            addedEvent = (WarpEvent)CreateInstance("WarpEvent");
+                            break;
+                        case "AudioEvent":
+                            addedEvent = (AudioEvent)CreateInstance("AudioEvent");
+                            break;
                         default:
                             addedEvent = (Event)CreateInstance("Event");
                             break;
