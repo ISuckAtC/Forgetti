@@ -53,8 +53,11 @@ public class BasicController : MonoBehaviour
             if (Physics.Raycast(PlayerCamera.position, PlayerCamera.forward, out rayhit, InteractRange))
             {
                 if (Input.GetKey(KeyCode.LeftShift)) Debug.Log("Interaction ray hit " + rayhit.transform.name);
-                if (rayhit.transform.tag == "Door") rayhit.transform.GetComponent<IInteractable>().Interact();
-                if (rayhit.transform.name == "Journal") rayhit.transform.GetComponent<IInteractable>().Interact();
+                IInteractable interactable;
+                if (rayhit.transform.TryGetComponent<IInteractable>(out interactable))
+                {
+                    interactable.Interact();
+                }
             }
         }
         if (Input.GetMouseButtonDown(1))

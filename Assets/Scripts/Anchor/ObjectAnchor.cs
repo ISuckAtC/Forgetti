@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectAnchor : MonoBehaviour
 {
+    public bool AnchorObjects;
     public float DistanceIgnore;
 
     public Transform StoredObject;
@@ -32,6 +33,7 @@ public class ObjectAnchor : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        if (!AnchorObjects) return;
         if (other.attachedRigidbody.gameObject == TempIgnore) return;
         if (StoredObject) return;
         if (other.attachedRigidbody.tag == "Pickup")

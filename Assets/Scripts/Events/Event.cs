@@ -2,11 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Event", menuName = "ScriptableObjects/Event", order = 1)]
 public class Event : ScriptableObject
 {
-    public virtual void Trigger(params object[] list)
+    public List<(string name, System.Type type)> ParameterIdentity = new List<(string, System.Type)>()
     {
-        Debug.Log("Event was triggered, the message from trigger is: " + (string)list[0]);
+        ("hi", typeof(float))
+    };
+    public List<string> ParameterValues = new List<string>()
+    {
+
+    };
+    public List<Object> ParameterObjects = new List<Object>()
+    {
+        
+    };
+    public virtual void Trigger(params object[] parameters)
+    {
+        Debug.Log("Event was triggered, the message from trigger is: " + (string)parameters[0]);
     }
 }

@@ -10,7 +10,7 @@ public class TriggerTrigger : Trigger
         {
             ("Trigger Enter", typeof(bool)),
             ("Trigger Exit", typeof(bool)),
-            ("Trigger object", typeof(GameObject))
+            ("Trigger object", typeof(Collider))
         };
     }
 
@@ -20,7 +20,7 @@ public class TriggerTrigger : Trigger
         bool triggerExit = bool.Parse(ParameterValues[1]);
         if (ParameterObjects.Count > 0)
         {
-            GameObject trigger = (GameObject)ParameterObjects[0];
+            GameObject trigger = ((Collider)ParameterObjects[0]).gameObject;
 
             TriggerCallback callback = trigger.AddComponent<TriggerCallback>();
             if (triggerEnter) callback.onTriggerEnterCall = TriggerEvents;
