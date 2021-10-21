@@ -21,6 +21,6 @@ public class TaskCompleteTrigger : Trigger
 
     public override void TriggerEvents(params object[] parameters)
     {
-        if ((string)parameters[0] == (string)ParameterValues[0]) foreach(Event e in Events) e.Trigger();
+        if ((string)parameters[0] == (string)ParameterValues[0]) foreach(Event e in Events) e.Trigger(parameters);
     }
 }
