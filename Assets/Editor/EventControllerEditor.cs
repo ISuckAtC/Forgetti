@@ -55,7 +55,7 @@ public class EventControllerEditor : Editor
 
                     EditorGUILayout.BeginHorizontal();
 
-                    EditorGUILayout.LabelField(name + ": ", GUILayout.Width(40));
+                    EditorGUILayout.LabelField(name + ": ", GUILayout.Width(90));
 
                     (string, Object) parameter = ("", null);
 
@@ -63,6 +63,11 @@ public class EventControllerEditor : Editor
 
                     switch (type.ToString())
                     {
+                        case "System.Boolean":
+                            if (parameterValues.Count < k + 1) parameterValues.Add("false");
+                            parameter.Item1 = EditorGUILayout.Toggle(bool.Parse(parameterValues[k]), GUILayout.Width(100)).ToString();
+                            break;
+
                         case "System.Int32":
                             if (parameterValues.Count < k + 1) parameterValues.Add("0");
                             parameter.Item1 = EditorGUILayout.IntField(int.Parse(parameterValues[k]), GUILayout.Width(100)).ToString();
@@ -151,6 +156,8 @@ public class EventControllerEditor : Editor
 
             menu.AddItem(new GUIContent("Empty Trigger"), false, OnTriggerSelected, "EmptyTrigger");
             menu.AddItem(new GUIContent("Click Trigger"), false, OnTriggerSelected, "ClickTrigger");
+            menu.AddItem(new GUIContent("Trigger Trigger"), false, OnTriggerSelected, "TriggerTrigger");
+            menu.AddItem(new GUIContent("Task Trigger"), false, OnTriggerSelected, "TaskTrigger");
 
             menu.ShowAsContext();
         }
@@ -162,6 +169,12 @@ public class EventControllerEditor : Editor
             {
                 case "ClickTrigger":
                     trigger = (ClickTrigger)CreateInstance("ClickTrigger");
+                    break;
+                case "TriggerTrigger":
+                    trigger = (TriggerTrigger)CreateInstance("TriggerTrigger");
+                    break;
+                case "TaskTrigger":
+                    trigger = (TaskCompleteTrigger)CreateInstance("TaskCompleteTrigger");
                     break;
                 default:
                     trigger = (Trigger)CreateInstance("Trigger");

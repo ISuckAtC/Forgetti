@@ -5,6 +5,7 @@ using UnityEngine;
 //[CreateAssetMenu(fileName = "Trigger", menuName = "ScriptableObjects/Trigger", order = 1)]
 public class Trigger : ScriptableObject
 {
+    protected TriggerCallback callbackScript;
     [HideInInspector]
     public List<Event> Events;
 
@@ -21,8 +22,14 @@ public class Trigger : ScriptableObject
 
     };
 
-    public virtual void TriggerEvents()
+    public void OnDestroy()
     {
-        foreach (Event ev in Events) ev.Trigger();
+        if (callbackScript != null) DestroyImmediate(callbackScript);
+    }
+
+
+    public virtual void TriggerEvents(params object[] parameters)
+    {
+        foreach (Event ev in Events) ev.Trigger(new object[] {"HELLO"});
     }
 }

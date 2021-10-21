@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ClickTrigger : Trigger
 {
-    private GameObject callbackObject;
     public void OnEnable()
     {
         ParameterIdentity = new List<(string, System.Type)>()
@@ -13,28 +12,22 @@ public class ClickTrigger : Trigger
             ("Click Count", typeof(int))
         };
     }
-    public void OnDestroy()
-    {
-        DestroyImmediate(callbackObject);
-    }
     public void Awake()
     {
         
-        if (!callbackObject) 
+        if (!callbackScript) 
         {
-            callbackObject = new GameObject("TriggerCallBack");
-            callbackObject.transform.parent = EventController.Main.transform;
-            UpdateCallBack callback = callbackObject.AddComponent<UpdateCallBack>();
-            callback.callback = CheckClick;
+            callbackScript = EventController.Main.gameObject.AddComponent<TriggerCallback>();
+            callbackScript.updateCall = CheckClick;
         }
     }
 
-    public void CheckClick()
+    public void CheckClick(params object[] parameters)
     {
         if (Input.GetMouseButtonDown(0)) TriggerEvents();
     }
 
-    public override void TriggerEvents()
+    public override void TriggerEvents(params object[] parameters)
     {
         string message = ParameterValues[0];
         int count = int.Parse(ParameterValues[1]);

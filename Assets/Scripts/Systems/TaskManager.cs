@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class TaskManager : MonoBehaviour
 {
-
     public static TaskManager main;
     public Dictionary<string, (GameObject TaskTextObj, int TaskStatusIndex, GameObject TaskParent)> TaskDictionary;
     public JournalController journal;
@@ -15,7 +14,6 @@ public class TaskManager : MonoBehaviour
 
     private void Start()
     {
-
         main = this;
 
         TaskDictionary = new Dictionary<string, (GameObject TaskTextObj, int TaskStatusIndex, GameObject TaskParent)>();
@@ -61,6 +59,8 @@ public class TaskManager : MonoBehaviour
                 
             }
 
+
+            SendMessage("OnTaskComplete", taskName);
         }
 
     }
