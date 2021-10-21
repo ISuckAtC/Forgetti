@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3002069131242937933}
   - component: {fileID: 5664062554619545822}
   - component: {fileID: 1275127967669253315}
-  - component: {fileID: 6469142810883875458}
+  - component: {fileID: 6176531979192906540}
   m_Layer: 0
   m_Name: BrushWithPaint
   m_TagString: Pickup
@@ -116,7 +116,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6469142810883875458
+--- !u!114 &6176531979192906540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1034445842421737495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa369b1ad4d5e6a429cef7b184ee70f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e2e537ed5ead944a9845f124cac8388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ReactionIngredients:
@@ -133,10 +133,11 @@ MonoBehaviour:
   ReactionResults:
   - {fileID: 1493675828543489813, guid: 1776ec785acaba94b85047f70b453d03, type: 3}
   ReactionTask:
-  - 3 Start a painting
-  ParentResult: 000000000000000000000000000000000000000000000000000000
+  - 5 Make a portrait
+  ParentResult: 00
   ReactionForce: 0
   CraftingDelay: 0
+  Crafting: {fileID: 0}
 --- !u!1 &5770108357179551576
 GameObject:
   m_ObjectHideFlags: 0

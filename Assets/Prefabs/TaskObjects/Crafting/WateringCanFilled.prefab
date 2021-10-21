@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3018742925901547420}
   - component: {fileID: 5260448260281660373}
+  - component: {fileID: 3960867580591144626}
+  - component: {fileID: 472609934376965255}
   m_Layer: 0
   m_Name: WateringCanFilled
   m_TagString: Pickup
@@ -48,6 +50,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &3960867580591144626
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062220252081523059}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &472609934376965255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062220252081523059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e2e537ed5ead944a9845f124cac8388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReactionIngredients:
+  - PotWithBabyPlant(Clone)
+  ReactionResults:
+  - {fileID: 1459020094579308167, guid: 03ece8428ff548c459667a7cbcf01974, type: 3}
+  ReactionTask:
+  - 7 Water the plant
+  ParentResult: 00
+  ReactionForce: 0
+  CraftingDelay: 0
+  Crafting: {fileID: 0}
 --- !u!1001 &7873562822137907872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73,15 +110,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e35ab4e90353b914da5b9f3bde8883d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e35ab4e90353b914da5b9f3bde8883d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.97
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e35ab4e90353b914da5b9f3bde8883d8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.47
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e35ab4e90353b914da5b9f3bde8883d8, type: 3}
       propertyPath: m_LocalRotation.w

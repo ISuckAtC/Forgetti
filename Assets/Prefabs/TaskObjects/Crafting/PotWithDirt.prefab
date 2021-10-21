@@ -131,7 +131,7 @@ MonoBehaviour:
   ReactionResults:
   - {fileID: 1459020094579308167, guid: 626a08931852cbc449afcf1aacd98af5, type: 3}
   ReactionTask:
-  - 4 Pot a plant
+  - 6 Pot a plant
   ParentResult: 0000
   ReactionForce: 0
   CraftingDelay: 0

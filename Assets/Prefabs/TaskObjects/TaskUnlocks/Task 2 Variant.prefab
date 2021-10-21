@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3140300778374340838
+--- !u!1001 &3394018051872749341
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -53,11 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4020107371980473933, guid: 4ca717a57d137ef4e97f1aec0fa71b7a, type: 3}
       propertyPath: m_Name
-      value: Task 3 Variant
+      value: Task 2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6845000824330684231, guid: 4ca717a57d137ef4e97f1aec0fa71b7a, type: 3}
       propertyPath: TaskMode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6845000824330684231, guid: 4ca717a57d137ef4e97f1aec0fa71b7a, type: 3}
       propertyPath: TaskNames.Array.size
@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6845000824330684231, guid: 4ca717a57d137ef4e97f1aec0fa71b7a, type: 3}
       propertyPath: TaskNames.Array.data[0]
-      value: 4 Clean the dishes
+      value: 3 Get the gift
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ca717a57d137ef4e97f1aec0fa71b7a, type: 3}
