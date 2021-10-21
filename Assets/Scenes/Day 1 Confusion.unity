@@ -123,6 +123,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &29782790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6958161480312813305}
+  m_Layer: 0
+  m_Name: Clothes (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &37137952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6639169546651911066, guid: 01ecc80b93c982d499276dcb11a10698, type: 3}
@@ -396,22 +412,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2080674842354598477, guid: c0ff8c65c362dbb45baccd29c08dc5e3, type: 3}
   m_PrefabInstance: {fileID: 123046954}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &125949790
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6958161480312813305}
-  m_Layer: 0
-  m_Name: Recovery GameObject (6958161480312813305)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &139662922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -586,6 +586,7 @@ Transform:
   - {fileID: 6958161480312813302}
   - {fileID: 6958161480312813304}
   - {fileID: 6958161480312813306}
+  - {fileID: 6958161480312813305}
   - {fileID: 6958161480312813307}
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -1757,6 +1758,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02aa46a8a70e8fb48a7d190b3543867c, type: 3}
+--- !u!1 &834391315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 834391317}
+  - component: {fileID: 834391316}
+  m_Layer: 0
+  m_Name: EventController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &834391316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834391315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba1d189b4cf98344ea1793b88a0d4112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Triggers: []
+--- !u!4 &834391317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834391315}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &854249414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3445297230918317332, guid: 59ba0ff0027a70041a76f26c2851284c, type: 3}
@@ -4477,7 +4522,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2929564554349941340, guid: ccb27451fd668664e81e126783ad15e4, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2929564554349941340, guid: ccb27451fd668664e81e126783ad15e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5692,13 +5737,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125949790}
+  m_GameObject: {fileID: 29782790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 219294772}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6958161480312813306
 Transform:

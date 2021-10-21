@@ -52,7 +52,7 @@ public class TaskManager : MonoBehaviour
 
             TaskStatus[TaskDictionary[taskName].TaskStatusIndex] = true;
             journal.UpdateJournal(TaskStatus[TaskDictionary[taskName].TaskStatusIndex], TaskDictionary[taskName].TaskStatusIndex);
-            if(TaskDictionary.Count < TaskDictionary[taskName].TaskStatusIndex)
+            if(TaskDictionary.Count >= TaskDictionary[taskName].TaskStatusIndex)
             {
 
                 TaskParents[TaskDictionary[taskName].TaskStatusIndex + 1].SetActive(true);
